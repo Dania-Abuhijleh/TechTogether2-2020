@@ -13,10 +13,17 @@ class DatabaseHelper{
   static final dbName = 'rewards.db';
   static final dbVersion = 1;
   static final _tableName = 'userPoints';
+  static final _tableTask = 'TaskList':
+  static final _tableFriends = 'FriendList';
 
   static final columnId= 'User_id';
   static final columnName= 'userName';
   static final colPrints= 'Prints';
+  static final colLevel = 'Level';
+  static final colFriendId = 'FriendID';
+  static final colFriendName = 'FriendName';
+  static final colFriendPrint = 'FriendPrint';
+  static final colFriendLevel = 'FriendLevel';
 
 
   DatabaseHelper._privateConstructor();
