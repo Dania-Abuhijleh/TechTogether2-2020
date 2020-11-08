@@ -1,17 +1,20 @@
 import 'dart:developer';
+import 'package:carbon_prints/UserClass.dart';
+import 'package:sqflite/sqflite.dart';
 
+import 'UserDatabase.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:adobe_xd/blend_mask.dart';
 import './Dashboard.dart';
 import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-
 class LogIn extends StatelessWidget {
   LogIn({
     Key key,
   }) : super(key: key);
+
+  get database => null;
 
   @override
   Widget build(BuildContext context) {
@@ -3610,7 +3613,8 @@ class LogIn extends StatelessWidget {
           ),
           GestureDetector(
             onTap: ()  {
-              if (userName == "Lisa" && pwInput == "password") {
+              String pass = "checkPassword(userName)";
+              if ( pass == pwInput) {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Dashboard()));
@@ -3619,7 +3623,7 @@ class LogIn extends StatelessWidget {
                 context: context,
                 builder: (BuildContext context) {
                 return AlertDialog(
-                title: Text("Incorrect username/password"),
+                title: Text("pass"),
                 );
                 });
                }
@@ -3671,6 +3675,18 @@ class LogIn extends StatelessWidget {
         ],
       ),
     );
+  }
+  checkPassword(userName) async {
+    // get a reference to the database
+    final Database db = await database;
+
+    // raw query
+    var pass = await database.query(
+       "Usr" , where: "id = ?", whereArgs: [userName]);
+
+    // print the results
+    return Usr.fromMap(pass.first);
+    // {_id: 2, name: Mary, age: 32}
   }
 }
 
