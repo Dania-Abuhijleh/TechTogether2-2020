@@ -40,7 +40,7 @@ class DatabaseHelper {
   static const String completionID = "completionID";
   static const String like = "Likes";
 
-  static const String frequency = "frequency";
+  static final frequency = "frequency";
   static const String gainedXP = "Task XP";
 
   static const String userComment = "Comments";
@@ -153,8 +153,8 @@ class DatabaseHelper {
     final db = await DatabaseHelper.instance.database;
 
     var result = await db.rawInsert(
-        " INSERT INTO USER_TABLE '"
-            "(USER_ID, USER_NAME, USER_PRINTS, USER_Level, USER_PW)"
+        " INSERT INTO $USER_TABLE '"
+            "($USER_ID, $USER_NAME, $USER_PRINTS, $USER_Level, $USER_PW)"
             " VALUES (1,${"Lisa"}, 10, 15, ${"password"})"
             " VALUES (1,${"Ariana Grande"}, 821, 32, ${"password"})"
             " VALUES (1,${"Kanye West"}, 650, 15, ${"password"})"
@@ -168,23 +168,80 @@ class DatabaseHelper {
     return result;
   }
 
-  addTask() async {
+  insertTask() async {
     final db = await DatabaseHelper.instance.database;
 
     var result = await db.rawInsert(
-        " INSERT INTO USER_TABLE '"
+        " INSERT INTO $TasksTable '"
             "(USER_ID, USER_NAME, USER_PRINTS, USER_Level, USER_PW)"
             " VALUES (1,${"Lisa"}, 10, 15, ${"password"})"
-            " VALUES (1,${"Ariana Grande"}, 821, 32, ${"password"})"
-            " VALUES (1,${"Kanye West"}, 650, 15, ${"password"})"
-            " VALUES (1,${"Emma Stone"}, 533, 22, ${"pd"})"
-            " VALUES (1,${"Addison Rae"}, 10, 15, ${"password"})"
-            " VALUES (1,${"Taylor Swift"}, 10, 15, ${"password"})"
-            " VALUES (1,${"Michelle Obama"}, 10, 15, ${"password"})"
-            " VALUES (1,${"Steve Jobs"}, 10, 15, ${"password"})"
-            " VALUES (1,${"Cardi B"}, 10, 15, ${"password"})"
+            " VALUES (2,${"Ariana Grande"}, 821, 32, ${"password"})"
+            " VALUES (3,${"Kanye West"}, 650, 15, ${"password"})"
+            " VALUES (11,${"Emma Stone"}, 533, 22, ${"pd"})"
+            " VALUES (13,${"Addison Rae"}, 10, 15, ${"password"})"
+            " VALUES (14,${"Taylor Swift"}, 10, 15, ${"password"})"
+            " VALUES (15,${"Michelle Obama"}, 10, 15, ${"password"})"
+            " VALUES (12,${"Steve Jobs"}, 10, 15, ${"password"})"
+            " VALUES (10,${"Cardi B"}, 10, 15, ${"password"})"
     );
     return result;
   }
 
+  // Helper methods
+
+  // Inserts a row in the database where each key in the Map is a column name
+  // and the value is the column value. The return value is the id of the
+  // inserted row.
+  Future<int> addFriend(Map<String, dynamic> row) async {
+    Database db = await instance.database;
+    return await db.insert(FriendsList, row);
+  }
+
+  Future<int> completeTask(Map<String, dynamic> row, int mult) async {
+    Database db = await instance.database;
+    return await db.insert(completedTasks, row);
+  }
+
+  // All of the rows are returned as a list of maps, where each map is
+  // a key-value list of columns.
+  Future<List<Map<String, dynamic>>> friendsPosts() async {
+    Database db = await instance.database;
+    return await db.query(FriendsPosts);
+  }
+
+  // All of the methods (insert, query, update, delete) can also be done using
+  // raw SQL commands. This method uses a raw query to give the row count.
+  Future<int> completedTasksCount() async {
+    Database db = await instance.database;
+    return Sqflite.firstIntValue(await db.rawQuery('SELECT COUNT(*) FROM $completedTasks'));
+  }
+
+  Future<int> currentXP(int id) async {
+    Database db = await instance.database;
+    return Sqflite.firstIntValue(await db.rawQuery('SELECT $USER_PRINTS FROM $USER_TABLE where USER_ID = id'));
+  }
+
+
+  // We are assuming here that the id column in the map is set. The other
+  // column values will be used to update the row.
+  Future<int> updateXP(Map<String, dynamic> row, int xp, int id) async {
+    Database db = await instance.database;
+    int id = row[USER_ID];
+    return await db.update(USER_TABLE, row, where: '$USER_ID = ?', whereArgs: [id]);
+  }
+
+//to check password
+  /*Future<String> checkPass (Map<String, dynamic> row, String name, String pass) async {
+    Database db = await instance.database;
+    return await db.checkPass('Select USER_PW FROM USER_TABLE where USER_NAME = name');
+  }
+*/
+
+  // Deletes the row specified by the id. The number of affected rows is
+  // returned. This should be 1 as long as the row exists.
+  Future<int> deletePending(int id) async {
+    Database db = await instance.database;
+    return await db.delete(TasksTable, where: '$taskID = ?', whereArgs: [id]);
+  }
 }
+

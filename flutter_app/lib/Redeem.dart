@@ -113,7 +113,7 @@ class Redeem extends StatelessWidget {
               height: 34.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/patagonia.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -924,7 +924,7 @@ class Redeem extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: const AssetImage(''),
+                          image: const AssetImage('assets/images/pantagonia.png'),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -1249,7 +1249,7 @@ class Redeem extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: const AssetImage(''),
+                            image: const AssetImage('assets/images/lyft.png'),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -1267,7 +1267,7 @@ class Redeem extends StatelessWidget {
               height: 55.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/dunkin.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -1282,7 +1282,7 @@ class Redeem extends StatelessWidget {
                 height: 36.0,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: const AssetImage(''),
+                    image: const AssetImage('assets/images/spotify.png'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -1296,7 +1296,7 @@ class Redeem extends StatelessWidget {
               height: 23.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/doordash.png'),
                   fit: BoxFit.fill,
                 ),
               ),

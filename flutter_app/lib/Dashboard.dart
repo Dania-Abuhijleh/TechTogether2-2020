@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './ActivityCategories.dart';
 import 'package:adobe_xd/page_link.dart';
+import './Friends.dart';
+import './Redeem.dart';
+import './Badges.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Dashboard extends StatelessWidget {
@@ -26,9 +29,9 @@ class Dashboard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(23.5, 22.0),
+            offset: Offset(23.5, 711.5),
             child: SvgPicture.string(
-              _svg_ma6c80,
+              _svg_o8e1x3,
               allowDrawingOutsideViewBox: true,
             ),
           ),
@@ -52,9 +55,9 @@ class Dashboard extends StatelessWidget {
               height: 55.0,
               decoration: BoxDecoration(
                 borderRadius:
-                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/lisaprofile.jpg'),
                   fit: BoxFit.cover,
                 ),
                 boxShadow: [
@@ -87,7 +90,7 @@ class Dashboard extends StatelessWidget {
               height: 20.0,
               decoration: BoxDecoration(
                 borderRadius:
-                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 color: const Color(0x805cc690),
               ),
             ),
@@ -112,6 +115,64 @@ class Dashboard extends StatelessWidget {
               allowDrawingOutsideViewBox: true,
             ),
           ),
+          // Transform.translate(
+          //   offset: Offset(170.0, 721.0),
+          //   child:
+          //       // Adobe XD layer: 'Icon feather-plus-c…' (group)
+          //       PageLink(
+          //     links: [
+          //       PageLinkInfo(
+          //         transition: LinkTransition.Fade,
+          //         ease: Curves.easeOut,
+          //         duration: 0.3,
+          //         pageBuilder: () => ActivityCategories(),
+          //       ),
+          //     ],
+          //     child: SizedBox(
+          //       width: 14.0,
+          //       height: 14.0,
+          //       child: Stack(
+          //         children: <Widget>[
+          //           Pinned.fromSize(
+          //             bounds: Rect.fromLTWH(0.0, 0.0, 14.0, 14.0),
+          //             size: Size(14.0, 14.0),
+          //             pinLeft: true,
+          //             pinRight: true,
+          //             pinTop: true,
+          //             pinBottom: true,
+          //             child: SvgPicture.string(
+          //               _svg_kf0avj,
+          //               allowDrawingOutsideViewBox: true,
+          //               fit: BoxFit.fill,
+          //             ),
+          //           ),
+          //           Pinned.fromSize(
+          //             bounds: Rect.fromLTWH(7.0, 4.0, 1.0, 6.0),
+          //             size: Size(14.0, 14.0),
+          //             fixedWidth: true,
+          //             fixedHeight: true,
+          //             child: SvgPicture.string(
+          //               _svg_ay4jg9,
+          //               allowDrawingOutsideViewBox: true,
+          //               fit: BoxFit.fill,
+          //             ),
+          //           ),
+          //           Pinned.fromSize(
+          //             bounds: Rect.fromLTWH(4.0, 7.0, 6.0, 1.0),
+          //             size: Size(14.0, 14.0),
+          //             fixedWidth: true,
+          //             fixedHeight: true,
+          //             child: SvgPicture.string(
+          //               _svg_dme7b9,
+          //               allowDrawingOutsideViewBox: true,
+          //               fit: BoxFit.fill,
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //     ),
+          //   ),
+          // ),
           GestureDetector(
             onTap: () {
               Navigator.push(
@@ -173,34 +234,18 @@ class Dashboard extends StatelessWidget {
               ),
             ),
           ),
-          // Transform.translate(
-          //
-          //   child:
-          //       // Adobe XD layer: 'Icon feather-plus-c…' (group)
-          //       PageLink(
-          //     links: [
-          //       PageLinkInfo(
-          //         transition: LinkTransition.Fade,
-          //         ease: Curves.easeOut,
-          //         duration: 0.3,
-          //         pageBuilder: () => ActivityCategories(),
-          //       ),
-          //     ],
-          //     child:
-          //   ),
-          // ), // Add a task logo
           Transform.translate(
             offset: Offset(242.5, 722.0),
             child: SvgPicture.string(
               _svg_p4fjb2,
               allowDrawingOutsideViewBox: true,
             ),
-          ), // friends LOGO
+          ),
           Transform.translate(
             offset: Offset(97.5, 723.2),
             child:
-            // Adobe XD layer: 'Icon ionic-ios-noti…' (group)
-            SizedBox(
+                // Adobe XD layer: 'Icon ionic-ios-noti…' (group)
+                SizedBox(
               width: 13.0,
               height: 14.0,
               child: Stack(
@@ -233,7 +278,7 @@ class Dashboard extends StatelessWidget {
                 ],
               ),
             ),
-          ),  // notification bell
+          ),
           Transform.translate(
             offset: Offset(19.6, 739.0),
             child: SizedBox(
@@ -281,39 +326,59 @@ class Dashboard extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-          ), // EDIT THIS -- Add a task
+          ),
           Transform.translate(
             offset: Offset(235.2, 739.0),
-            child: SizedBox(
-              width: 34.0,
-              child: Text(
-                'Friends',
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 8,
-                  color: const Color(0xff54ba81),
-                  fontWeight: FontWeight.w300,
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Friends(),
                 ),
-                textAlign: TextAlign.center,
+              ],
+              child: SizedBox(
+                width: 34.0,
+                child: Text(
+                  'Friends',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 8,
+                    color: const Color(0xff54ba81),
+                    fontWeight: FontWeight.w300,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
-          ), // Friends
+          ),
           Transform.translate(
             offset: Offset(300.6, 738.0),
-            child: SizedBox(
-              width: 41.0,
-              child: Text(
-                'Rewards',
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 8,
-                  color: const Color(0xff54ba81),
-                  fontWeight: FontWeight.w300,
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Redeem(),
                 ),
-                textAlign: TextAlign.center,
+              ],
+              child: SizedBox(
+                width: 41.0,
+                child: Text(
+                  'Rewards',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 8,
+                    color: const Color(0xff54ba81),
+                    fontWeight: FontWeight.w300,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
-          ), // Rewards
+          ),
           Transform.translate(
             offset: Offset(313.0, 722.0),
             child: SizedBox(
@@ -329,8 +394,8 @@ class Dashboard extends StatelessWidget {
                     pinTop: true,
                     pinBottom: true,
                     child:
-                    // Adobe XD layer: 'badge' (group)
-                    Stack(
+                        // Adobe XD layer: 'badge' (group)
+                        Stack(
                       children: <Widget>[
                         Pinned.fromSize(
                           bounds: Rect.fromLTWH(1.8, 0.0, 8.5, 8.3),
@@ -427,17 +492,18 @@ class Dashboard extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(22.0, 599.0),
-            child: Container(
-              width: 27.0,
-              height: 26.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                color: const Color(0x80f8bf45),
-              ),
-            ),
-          ), // pending task 1 yellow background
+          // Transform.translate(
+          //   offset: Offset(22.0, 599.0),
+          //   child: Container(
+          //     width: 27.0,
+          //     height: 26.0,
+          //     decoration: BoxDecoration(
+          //       borderRadius: BorderRadius.circular(6.0),
+          //       color: const Color(0x80f8bf45),
+          //     ),
+          //   ),
+          // ),
+
           Transform.translate(
             offset: Offset(22.0, 633.0),
             child: Container(
@@ -471,7 +537,7 @@ class Dashboard extends StatelessWidget {
               ),
               textAlign: TextAlign.left,
             ),
-          ), // upload grocery receipt
+          ),
           Transform.translate(
             offset: Offset(58.0, 640.0),
             child: Text(
@@ -483,7 +549,7 @@ class Dashboard extends StatelessWidget {
               ),
               textAlign: TextAlign.left,
             ),
-          ), // log transportation data
+          ),
           Transform.translate(
             offset: Offset(58.0, 672.0),
             child: Text(
@@ -502,12 +568,12 @@ class Dashboard extends StatelessWidget {
               _svg_licxd1,
               allowDrawingOutsideViewBox: true,
             ),
-          ), // some pending tasks logos
+          ),
           Transform.translate(
-            offset: Offset(321.0, 22.0),
+            offset: Offset(322.0, 20.0),
             child:
-            // Adobe XD layer: 'Icon ionic-ios-menu' (group)
-            SizedBox(
+                // Adobe XD layer: 'Icon ionic-ios-menu' (group)
+                SizedBox(
               width: 15.0,
               height: 10.0,
               child: Stack(
@@ -557,8 +623,8 @@ class Dashboard extends StatelessWidget {
           Transform.translate(
             offset: Offset(24.0, 118.0),
             child:
-            // Adobe XD layer: 'Icon feather-plus-c…' (group)
-            SizedBox(
+                // Adobe XD layer: 'Icon feather-plus-c…' (group)
+                SizedBox(
               width: 14.0,
               height: 14.0,
               child: Stack(
@@ -613,7 +679,7 @@ class Dashboard extends StatelessWidget {
               ),
               textAlign: TextAlign.left,
             ),
-          ), // log a task
+          ),
           Transform.translate(
             offset: Offset(134.3, 119.5),
             child: SvgPicture.string(
@@ -653,9 +719,9 @@ class Dashboard extends StatelessWidget {
               height: 25.0,
               decoration: BoxDecoration(
                 borderRadius:
-                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/ariana.jpg'),
                   fit: BoxFit.cover,
                 ),
                 boxShadow: [
@@ -668,6 +734,8 @@ class Dashboard extends StatelessWidget {
               ),
             ),
           ),
+
+
           Transform.translate(
             offset: Offset(25.0, 427.0),
             child: Text(
@@ -699,7 +767,7 @@ class Dashboard extends StatelessWidget {
               height: 2.0,
               decoration: BoxDecoration(
                 borderRadius:
-                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 color: const Color(0xff54ba81),
               ),
             ),
@@ -730,9 +798,9 @@ class Dashboard extends StatelessWidget {
               height: 25.0,
               decoration: BoxDecoration(
                 borderRadius:
-                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/kanye.jpg'),
                   fit: BoxFit.cover,
                 ),
                 boxShadow: [
@@ -776,7 +844,7 @@ class Dashboard extends StatelessWidget {
               height: 2.0,
               decoration: BoxDecoration(
                 borderRadius:
-                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 color: const Color(0xff54ba81),
               ),
             ),
@@ -807,9 +875,9 @@ class Dashboard extends StatelessWidget {
               height: 25.0,
               decoration: BoxDecoration(
                 borderRadius:
-                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/emmastone.jpg'),
                   fit: BoxFit.cover,
                 ),
                 boxShadow: [
@@ -853,7 +921,7 @@ class Dashboard extends StatelessWidget {
               height: 2.0,
               decoration: BoxDecoration(
                 borderRadius:
-                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 color: const Color(0xff54ba81),
               ),
             ),
@@ -892,8 +960,8 @@ class Dashboard extends StatelessWidget {
                     pinTop: true,
                     pinBottom: true,
                     child:
-                    // Adobe XD layer: 'Chart' (group)
-                    Stack(
+                        // Adobe XD layer: 'Chart' (group)
+                        Stack(
                       children: <Widget>[
                         Pinned.fromSize(
                           bounds: Rect.fromLTWH(11.0, 0.0, 299.5, 48.3),
@@ -903,8 +971,8 @@ class Dashboard extends StatelessWidget {
                           pinTop: true,
                           pinBottom: true,
                           child:
-                          // Adobe XD layer: 'Chart Grid' (shape)
-                          SvgPicture.string(
+                              // Adobe XD layer: 'Chart Grid' (shape)
+                              SvgPicture.string(
                             _svg_z280mo,
                             allowDrawingOutsideViewBox: true,
                             fit: BoxFit.fill,
@@ -918,8 +986,8 @@ class Dashboard extends StatelessWidget {
                           pinTop: true,
                           pinBottom: true,
                           child:
-                          // Adobe XD layer: 'Graph' (group)
-                          Stack(
+                              // Adobe XD layer: 'Graph' (group)
+                              Stack(
                             children: <Widget>[
                               Pinned.fromSize(
                                 bounds: Rect.fromLTWH(0.0, 0.0, 294.8, 42.0),
@@ -929,8 +997,8 @@ class Dashboard extends StatelessWidget {
                                 pinTop: true,
                                 pinBottom: true,
                                 child:
-                                // Adobe XD layer: 'Bar.Graph' (shape)
-                                SvgPicture.string(
+                                    // Adobe XD layer: 'Bar.Graph' (shape)
+                                    SvgPicture.string(
                                   _svg_arzd0z,
                                   allowDrawingOutsideViewBox: true,
                                   fit: BoxFit.fill,
@@ -944,8 +1012,8 @@ class Dashboard extends StatelessWidget {
                                 pinTop: true,
                                 fixedHeight: true,
                                 child:
-                                // Adobe XD layer: 'Line.Graph' (shape)
-                                SvgPicture.string(
+                                    // Adobe XD layer: 'Line.Graph' (shape)
+                                    SvgPicture.string(
                                   _svg_z88df0,
                                   allowDrawingOutsideViewBox: true,
                                   fit: BoxFit.fill,
@@ -962,8 +1030,8 @@ class Dashboard extends StatelessWidget {
                           pinBottom: true,
                           fixedWidth: true,
                           child:
-                          // Adobe XD layer: 'Y-Axis-Info' (group)
-                          Stack(
+                              // Adobe XD layer: 'Y-Axis-Info' (group)
+                              Stack(
                             children: <Widget>[
                               Pinned.fromSize(
                                 bounds: Rect.fromLTWH(0.0, 42.8, 4.0, 4.0),
@@ -973,8 +1041,8 @@ class Dashboard extends StatelessWidget {
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
-                                // Adobe XD layer: '$5k' (text)
-                                Text(
+                                    // Adobe XD layer: '$5k' (text)
+                                    Text(
                                   '\$5k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -991,8 +1059,8 @@ class Dashboard extends StatelessWidget {
                                 pinRight: true,
                                 fixedHeight: true,
                                 child:
-                                // Adobe XD layer: '$10k' (text)
-                                Text(
+                                    // Adobe XD layer: '$10k' (text)
+                                    Text(
                                   '\$10k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -1009,8 +1077,8 @@ class Dashboard extends StatelessWidget {
                                 pinRight: true,
                                 fixedHeight: true,
                                 child:
-                                // Adobe XD layer: '$15k' (text)
-                                Text(
+                                    // Adobe XD layer: '$15k' (text)
+                                    Text(
                                   '\$15k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -1027,8 +1095,8 @@ class Dashboard extends StatelessWidget {
                                 pinRight: true,
                                 fixedHeight: true,
                                 child:
-                                // Adobe XD layer: '$20k' (text)
-                                Text(
+                                    // Adobe XD layer: '$20k' (text)
+                                    Text(
                                   '\$20k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -1046,8 +1114,8 @@ class Dashboard extends StatelessWidget {
                                 pinTop: true,
                                 fixedHeight: true,
                                 child:
-                                // Adobe XD layer: '$25k' (text)
-                                Text(
+                                    // Adobe XD layer: '$25k' (text)
+                                    Text(
                                   '\$25k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -1144,8 +1212,8 @@ class Dashboard extends StatelessWidget {
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
-                    // Adobe XD layer: 'Icon ionic-ios-water' (shape)
-                    SvgPicture.string(
+                        // Adobe XD layer: 'Icon ionic-ios-water' (shape)
+                        SvgPicture.string(
                       _svg_p0gtzo,
                       allowDrawingOutsideViewBox: true,
                       fit: BoxFit.fill,
@@ -1406,12 +1474,23 @@ class Dashboard extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(23.0, 175.0),
-            child: Container(
-              width: 314.0,
-              height: 80.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                border: Border.all(width: 0.5, color: const Color(0xffffffff)),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Badges(),
+                ),
+              ],
+              child: Container(
+                width: 314.0,
+                height: 80.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6.0),
+                  border:
+                      Border.all(width: 0.5, color: const Color(0xffffffff)),
+                ),
               ),
             ),
           ),
@@ -1488,10 +1567,10 @@ class Dashboard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(137.0, 17.0),
+            offset: Offset(25.0, 15.0),
             child:
-            // Adobe XD layer: 'Logo_White' (group)
-            SizedBox(
+                // Adobe XD layer: 'Logo_White' (group)
+                SizedBox(
               width: 81.0,
               height: 20.0,
               child: Stack(
@@ -1546,8 +1625,8 @@ class Dashboard extends StatelessWidget {
                           pinTop: true,
                           pinBottom: true,
                           child:
-                          // Adobe XD layer: 'Logo_White' (group)
-                          Stack(
+                              // Adobe XD layer: 'Logo_White' (group)
+                              Stack(
                             children: <Widget>[
                               Pinned.fromSize(
                                 bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
@@ -1557,8 +1636,8 @@ class Dashboard extends StatelessWidget {
                                 pinTop: true,
                                 pinBottom: true,
                                 child:
-                                // Adobe XD layer: 'Ellipse 2' (shape)
-                                Container(
+                                    // Adobe XD layer: 'Ellipse 2' (shape)
+                                    Container(
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.all(
                                         Radius.elliptical(9999.0, 9999.0)),
@@ -1572,8 +1651,8 @@ class Dashboard extends StatelessWidget {
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
-                                // Adobe XD layer: 'human-feet-shape' (group)
-                                Stack(
+                                    // Adobe XD layer: 'human-feet-shape' (group)
+                                    Stack(
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds: Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
@@ -1583,8 +1662,8 @@ class Dashboard extends StatelessWidget {
                                       pinTop: true,
                                       pinBottom: true,
                                       child:
-                                      // Adobe XD layer: 'Path 429' (shape)
-                                      SvgPicture.string(
+                                          // Adobe XD layer: 'Path 429' (shape)
+                                          SvgPicture.string(
                                         _svg_gxpukw,
                                         allowDrawingOutsideViewBox: true,
                                         fit: BoxFit.fill,
@@ -1602,20 +1681,20 @@ class Dashboard extends StatelessWidget {
                                 child: Transform.rotate(
                                   angle: 0.9774,
                                   child:
-                                  // Adobe XD layer: 'human-feet-shape' (group)
-                                  Stack(
+                                      // Adobe XD layer: 'human-feet-shape' (group)
+                                      Stack(
                                     children: <Widget>[
                                       Pinned.fromSize(
                                         bounds:
-                                        Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
+                                            Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
                                         size: Size(5.9, 8.0),
                                         pinLeft: true,
                                         pinRight: true,
                                         pinTop: true,
                                         pinBottom: true,
                                         child:
-                                        // Adobe XD layer: 'Path 429' (shape)
-                                        SvgPicture.string(
+                                            // Adobe XD layer: 'Path 429' (shape)
+                                            SvgPicture.string(
                                           _svg_m3qj8y,
                                           allowDrawingOutsideViewBox: true,
                                           fit: BoxFit.fill,
@@ -1652,14 +1731,26 @@ class Dashboard extends StatelessWidget {
               ),
             ),
           ),
+          Transform.translate(
+            offset: Offset(288.0, 185.0),
+            child: Text(
+              '+5.3 XP',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 11,
+                color: const Color(0xffffffff),
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
         ],
       ),
     );
   }
 }
 
-const String _svg_ma6c80 =
-    '<svg viewBox="23.5 22.0 313.0 689.5" ><path transform="translate(12.75, 15.81)" d="M 13.05930042266846 11.43977355957031 L 17.03031349182129 7.471888542175293 C 17.32399749755859 7.178202629089355 17.32399749755859 6.703305244445801 17.03031349182129 6.412744998931885 C 16.73662376403809 6.119058132171631 16.2617301940918 6.122181415557861 15.96804141998291 6.412744998931885 L 11.46902370452881 10.90863990783691 C 11.1847095489502 11.19295310974121 11.1784610748291 11.64910507202148 11.44715213775635 11.94279003143311 L 15.96491813659668 16.46992874145508 C 16.11176109313965 16.61677169799805 16.30546951293945 16.68863105773926 16.49605178833008 16.68863105773926 C 16.68663597106934 16.68863105773926 16.88034248352051 16.61677169799805 17.02718734741211 16.46992874145508 C 17.32087326049805 16.17624282836914 17.32087326049805 15.70134544372559 17.02718734741211 15.41078281402588 L 13.05930042266846 11.43977355957031 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(23.5, 711.5)" d="M 0 0 L 313 0" fill="none" fill-opacity="0.5" stroke="#54ba81" stroke-width="0.5" stroke-opacity="0.5" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_o8e1x3 =
+    '<svg viewBox="23.5 711.5 313.0 1.0" ><path transform="translate(23.5, 711.5)" d="M 0 0 L 313 0" fill="none" fill-opacity="0.5" stroke="#54ba81" stroke-width="0.5" stroke-opacity="0.5" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_kf0avj =
     '<svg viewBox="3.0 3.0 14.0 14.0" ><path transform="translate(0.0, 0.0)" d="M 17.00000190734863 10.00000095367432 C 17.00000190734863 13.86599445343018 13.86599445343018 17.00000190734863 10 17.00000190734863 C 6.134007453918457 17.00000190734863 3.000001430511475 13.86599445343018 3.000000238418579 10.00000381469727 C 3.000000238418579 6.134008884429932 6.134007930755615 3.000000953674316 10.00000095367432 3.000001907348633 C 13.86599445343018 3.000001907348633 17.00000190734863 6.134009838104248 17.00000190734863 10.00000381469727 Z" fill="#54ba81" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>';
 const String _svg_ay4jg9 =
