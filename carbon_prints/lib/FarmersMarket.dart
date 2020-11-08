@@ -1,19 +1,29 @@
+import 'package:carbon_prints/TaskClass.dart';
+import 'package:carbon_prints/UserDatabase.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'Dashboard.dart';
+import 'Friends.dart';
+import 'Redeem.dart';
 class FarmersMarket extends StatelessWidget {
+  final dbHelper = DatabaseHelper.instance;
+  Task _task;
   FarmersMarket({
     Key key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    int XP;
+    int mult;
+    String Comment;
+    int xpGained;
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
           Transform.translate(
-            offset: Offset(9.0, 22.0),
+            offset: Offset(9.0, 13.0),
             child: SizedBox(
               width: 327.0,
               height: 249.0,
@@ -60,7 +70,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(33.0, 0.0, 48.4, 132.4),
+                                      Rect.fromLTWH(33.0, 0.0, 48.4, 132.4),
                                       size: Size(120.2, 164.1),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -88,7 +98,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_pyeysp,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -103,7 +113,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_z2s9t5,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -118,7 +128,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_iga6m5,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -133,7 +143,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_gze9lk,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -147,7 +157,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_2aohry,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -161,7 +171,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_jeuo62,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -199,7 +209,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(46.3, 69.2, 73.9, 94.9),
+                                      Rect.fromLTWH(46.3, 69.2, 73.9, 94.9),
                                       size: Size(120.2, 164.1),
                                       pinRight: true,
                                       pinBottom: true,
@@ -239,7 +249,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 70.6, 39.6, 47.5),
+                                      Rect.fromLTWH(0.0, 70.6, 39.6, 47.5),
                                       size: Size(120.2, 164.1),
                                       pinLeft: true,
                                       fixedWidth: true,
@@ -308,7 +318,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_ux3yer,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -323,7 +333,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_scqiea,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -374,7 +384,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_f1blpk,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -396,7 +406,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.1, 0.0, 12.0, 7.6),
+                                      Rect.fromLTWH(8.1, 0.0, 12.0, 7.6),
                                       size: Size(20.1, 19.9),
                                       pinRight: true,
                                       pinTop: true,
@@ -423,7 +433,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 4.1, 14.7, 15.7),
+                                      Rect.fromLTWH(0.0, 4.1, 14.7, 15.7),
                                       size: Size(20.1, 19.9),
                                       pinLeft: true,
                                       pinBottom: true,
@@ -520,7 +530,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 8.4, 35.4, 29.9),
+                                      Rect.fromLTWH(0.0, 8.4, 35.4, 29.9),
                                       size: Size(35.4, 46.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -534,7 +544,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.6, 10.5, 5.9, 5.8),
+                                      Rect.fromLTWH(23.6, 10.5, 5.9, 5.8),
                                       size: Size(35.4, 46.6),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -546,7 +556,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 18.9, 35.4, 27.7),
+                                      Rect.fromLTWH(0.0, 18.9, 35.4, 27.7),
                                       size: Size(35.4, 46.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -560,7 +570,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(10.4, 0.0, 10.9, 8.0),
+                                      Rect.fromLTWH(10.4, 0.0, 10.9, 8.0),
                                       size: Size(35.4, 46.6),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -600,7 +610,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(6.9, 9.2, 13.7, 5.2),
+                                      Rect.fromLTWH(6.9, 9.2, 13.7, 5.2),
                                       size: Size(35.4, 46.6),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -612,7 +622,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(5.5, 14.7, 1.0, 1.0),
+                                      Rect.fromLTWH(5.5, 14.7, 1.0, 1.0),
                                       size: Size(35.4, 46.6),
                                       pinLeft: true,
                                       fixedWidth: true,
@@ -625,7 +635,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(4.8, 4.0, 11.0, 10.4),
+                                      Rect.fromLTWH(4.8, 4.0, 11.0, 10.4),
                                       size: Size(35.4, 46.6),
                                       pinLeft: true,
                                       pinTop: true,
@@ -761,7 +771,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 27.6, 7.4, 4.2),
+                                      Rect.fromLTWH(0.0, 27.6, 7.4, 4.2),
                                       size: Size(45.1, 32.6),
                                       pinLeft: true,
                                       pinBottom: true,
@@ -775,7 +785,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(4.8, 0.0, 40.2, 32.6),
+                                      Rect.fromLTWH(4.8, 0.0, 40.2, 32.6),
                                       size: Size(45.1, 32.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -1028,7 +1038,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.6, 0.0, 12.6, 10.5),
+                                      Rect.fromLTWH(8.6, 0.0, 12.6, 10.5),
                                       size: Size(21.1, 24.6),
                                       pinRight: true,
                                       pinTop: true,
@@ -1055,7 +1065,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 7.1, 16.6, 17.4),
+                                      Rect.fromLTWH(0.0, 7.1, 16.6, 17.4),
                                       size: Size(21.1, 24.6),
                                       pinLeft: true,
                                       pinBottom: true,
@@ -1137,7 +1147,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(36.8, 0.0, 11.0, 73.1),
+                                      Rect.fromLTWH(36.8, 0.0, 11.0, 73.1),
                                       size: Size(47.8, 73.1),
                                       pinRight: true,
                                       pinTop: true,
@@ -1164,7 +1174,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 11.0, 73.1),
+                                      Rect.fromLTWH(0.0, 0.0, 11.0, 73.1),
                                       size: Size(47.8, 73.1),
                                       pinLeft: true,
                                       pinTop: true,
@@ -1191,7 +1201,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(7.0, 0.0, 4.1, 11.7),
+                                      Rect.fromLTWH(7.0, 0.0, 4.1, 11.7),
                                       size: Size(47.8, 73.1),
                                       pinLeft: true,
                                       pinTop: true,
@@ -1205,7 +1215,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(36.8, 0.0, 4.2, 10.4),
+                                      Rect.fromLTWH(36.8, 0.0, 4.2, 10.4),
                                       size: Size(47.8, 73.1),
                                       pinRight: true,
                                       pinTop: true,
@@ -1282,7 +1292,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 45.8, 51.3),
+                                      Rect.fromLTWH(0.0, 0.0, 45.8, 51.3),
                                       size: Size(45.8, 51.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -1296,7 +1306,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(1.1, 1.2, 43.5, 48.8),
+                                      Rect.fromLTWH(1.1, 1.2, 43.5, 48.8),
                                       size: Size(45.8, 51.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -1310,7 +1320,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(3.9, 4.4, 37.9, 42.5),
+                                      Rect.fromLTWH(3.9, 4.4, 37.9, 42.5),
                                       size: Size(45.8, 51.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -1661,14 +1671,14 @@ class FarmersMarket extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(40.7, 215.3, 18.3, 19.8),
+                          bounds: Rect.fromLTWH(33.7, 214.3, 18.3, 19.8),
                           size: Size(326.5, 249.2),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
                           fixedHeight: true,
                           child: SvgPicture.string(
-                            _svg_bnwt84,
+                            _svg_h5b1le,
                             allowDrawingOutsideViewBox: true,
                             fit: BoxFit.fill,
                           ),
@@ -1683,12 +1693,12 @@ class FarmersMarket extends StatelessWidget {
           Transform.translate(
             offset: Offset(0.0, 211.0),
             child: SvgPicture.string(
-              _svg_dsu1no,
+              _svg_cys9bi,
               allowDrawingOutsideViewBox: true,
             ),
           ),
           Transform.translate(
-            offset: Offset(44.0, 366.0),
+            offset: Offset(43.0, 366.0),
             child: Text(
               'Shopping at Farmer’s Market',
               style: TextStyle(
@@ -1701,94 +1711,68 @@ class FarmersMarket extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
-          Transform.translate(
-            offset: Offset(62.0, 413.0),
-            child: Text(
-              'Amount Spent',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xffffffff),
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
+          Container(
+            // padding: const EdgeInsets.fromLTRB(10, 8, 170, 8),
+            margin: new EdgeInsets.fromLTRB(32, 370.0, 88.0, 100.0),
+            padding: EdgeInsets.all(12),
+
+            child: Column(
+              children: <Widget>[
+
+                SizedBox(height: 16,),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(6.0),
+                    border: Border.all(width: 1.0, color: const Color(0xffffffff)),
+                  ),
+                  child: TextField(
+                    onChanged: (String xp) {
+                       XP = int.parse(xp);
+                    },
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      labelText: 'Amount Spent',
+                      labelStyle: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: const Color(0xffffffff),
+                        height: 1.3571428571428572,
+                      ),
+                      isDense: true,                      // Added this
+                      contentPadding: EdgeInsets.all(8),  // Added this
+                    ),
+                  ),
+                ),
+                SizedBox(height: 12,),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(6.0),
+                    border: Border.all(width: 1.0, color: const Color(0xffffffff)),
+                  ),
+                  child: TextField(
+                    onChanged: (String str) {
+                      Comment = str;
+                    },
+                    maxLines: 5,
+                    decoration: InputDecoration(
+                      // contentPadding: new EdgeInsets.only(top: 1),
+
+                      border: InputBorder.none,
+                      labelText: 'Comment',
+                      labelStyle: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: const Color(0xffffffff),
+                        height: 1.3571428571428572,
+                      ),
+                      contentPadding: EdgeInsets.all(8),  // Added this
+                    ),
+                  ),
+                )
+              ],
             ),
           ),
-          Transform.translate(
-            offset: Offset(43.3, 572.5),
-            child: SvgPicture.string(
-              _svg_49cb7q,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(67.0, 570.0),
-            child: Text(
-              'Share to Friends',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 11,
-                color: const Color(0xffffffff),
-                fontWeight: FontWeight.w500,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(196.0, 573.0),
-            child: SvgPicture.string(
-              _svg_uci83i,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(218.0, 570.0),
-            child: Text(
-              'Add Picture',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 11,
-                color: const Color(0xffffffff),
-                fontWeight: FontWeight.w500,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(44.0, 404.0),
-            child: Container(
-              width: 273.0,
-              height: 37.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                border: Border.all(width: 1.0, color: const Color(0xffffffff)),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(43.0, 459.0),
-            child: Container(
-              width: 273.0,
-              height: 99.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                border: Border.all(width: 1.0, color: const Color(0xffffffff)),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(62.0, 470.0),
-            child: Text(
-              'Comments',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xffffffff),
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
+
           Transform.translate(
             offset: Offset(24.0, 22.0),
             child: SvgPicture.string(
@@ -1799,8 +1783,8 @@ class FarmersMarket extends StatelessWidget {
           Transform.translate(
             offset: Offset(321.0, 22.0),
             child:
-                // Adobe XD layer: 'Icon ionic-ios-menu' (group)
-                SizedBox(
+            // Adobe XD layer: 'Icon ionic-ios-menu' (group)
+            SizedBox(
               width: 15.0,
               height: 10.0,
               child: Stack(
@@ -1847,9 +1831,110 @@ class FarmersMarket extends StatelessWidget {
               ),
             ),
           ),
+
+          /****** SUBMIT BUTTON ****************************/
+          GestureDetector(
+            onTap: () {
+              addXP() {
+                XP = XP * mult;
+
+                return XP ;
+              }
+
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Redeem(),
+               // either back to Dashboard or Friends
+              ));},
+            child: Container(
+              width: 273.0,
+              height: 37.0,
+              margin: new EdgeInsets.fromLTRB(45, 599.0, 100.0, 90.0),
+
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(6.0),
+                color: const Color(0xffffffff),
+              ),
+            ),
+          ),
+
+          Transform.translate(
+            offset: Offset(153.0, 608.0),
+            child: Text(
+              'Submit',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 14,
+                color: const Color(0xff40aef8),
+                fontWeight: FontWeight.w700,
+                height: 1.3571428571428572,
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ), // Submit text
+          Transform.translate(
+            offset: Offset(41.3, 643.5),
+            child: SvgPicture.string(
+              _svg_an1zau,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(65.0, 641.0),
+            child: Text(
+              'Share to Friends',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 11,
+                color: const Color(0xffffffff),
+                fontWeight: FontWeight.w500,
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(230.0, 644.0),
+            child: SvgPicture.string(
+              _svg_awyi1c,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(252.0, 641.0),
+            child: Text(
+              'Add Picture',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 11,
+                color: const Color(0xffffffff),
+                fontWeight: FontWeight.w500,
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
         ],
       ),
     );
+  }
+  void _currentXP(int id) async{
+    //gets currentXP of user
+    int xp = await dbHelper.currentXP(id);
+  }
+
+
+  void _updateXP(int xp, int id, int current) async {
+    // row to update
+    Map<String, dynamic> row = {
+      DatabaseHelper.USER_ID   : 1,
+      DatabaseHelper.USER_NAME : DatabaseHelper.USER_NAME,
+      DatabaseHelper.USER_PRINTS : current + xp,
+      DatabaseHelper.USER_Level : 32,
+      DatabaseHelper.USER_PW : 32,
+
+    };
+    final rowsAffected = await dbHelper.updateXP(row, xp, id);
+    print('updated $rowsAffected row(s)');
   }
 }
 
@@ -2057,14 +2142,10 @@ const String _svg_2tb1n3 =
     '<svg viewBox="34.6 19.9 10.3 9.5" ><path transform="translate(-1836.28, -697.59)" d="M 1872.151000976562 726.0479736328125 C 1872.166015625 726.14697265625 1877.635009765625 728.0460205078125 1881.154052734375 726.0479736328125 C 1881.154052734375 726.0479736328125 1881.906982421875 716.968017578125 1877.704956054688 717.4609985351562 C 1873.504028320312 717.9530029296875 1871.015991210938 719.4329833984375 1870.911010742188 721.6829833984375 C 1870.805053710938 723.9320068359375 1872.151000976562 726.0479736328125 1872.151000976562 726.0479736328125 Z" fill="#305da5" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
 const String _svg_twd573 =
     '<svg viewBox="52.8 58.7 6.8 4.1" ><path transform="translate(-1836.28, -697.59)" d="M 1889.107055664062 758.5239868164062 C 1889.107055664062 758.5239868164062 1891.238037109375 756.3350219726562 1892.159057617188 756.2830200195312 C 1893.078979492188 756.22998046875 1895.817993164062 756.593994140625 1895.911987304688 757.0189819335938 C 1896.006958007812 757.4429931640625 1893.099975585938 758.2490234375 1892.93603515625 758.52099609375 C 1892.77294921875 758.7919921875 1890.989990234375 760.6510009765625 1890.196044921875 760.3150024414062 C 1889.402954101562 759.97900390625 1889.107055664062 758.5239868164062 1889.107055664062 758.5239868164062 Z" fill="#fc9797" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
-const String _svg_bnwt84 =
-    '<svg viewBox="40.7 215.3 18.3 19.8" ><path transform="matrix(0.951057, 0.309017, -0.309017, 0.951057, -1618.68, -1148.54)" d="M 2005.04931640625 799.0330200195312 L 2018.146118164062 799.0330200195312 C 2018.84814453125 798.3679809570312 2017.66015625 796.85498046875 2016.419189453125 796.7540283203125 C 2015.880126953125 796.7080078125 2015.19921875 796.8350219726562 2014.420166015625 797.0189819335938 C 2014.240234375 794.3410034179688 2013.211181640625 782.3060302734375 2009.332275390625 782.7890014648438 C 2004.970336914062 783.3309936523438 2009.332275390625 788.0900268554688 2010.565185546875 790.906982421875 C 2011.478149414062 792.9940185546875 2012.442138671875 795.9860229492188 2012.882202148438 797.3989868164062 C 2012.528198242188 797.4849853515625 2012.1611328125 797.5689697265625 2011.787231445312 797.64599609375 C 2011.209228515625 795.6610107421875 2009.058349609375 788.9829711914062 2006.322265625 789.3720092773438 C 2003.111328125 789.8280029296875 2004.40234375 792.5050048828125 2006.678344726562 794.093994140625 C 2008.348266601562 795.2630004882812 2010.399169921875 796.9240112304688 2011.373168945312 797.7260131835938 C 2010.548217773438 797.8770141601562 2009.686157226562 797.97900390625 2008.812255859375 797.9559936523438 C 2006.568237304688 797.89599609375 2005.473266601562 798.635986328125 2005.04931640625 799.0330200195312 Z" fill="#6d89d0" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
-const String _svg_dsu1no =
-    '<svg viewBox="0.0 211.0 364.9 549.7" ><path transform="translate(0.0, 208.62)" d="M 356.909423828125 551.072265625 C 84.41183471679688 551.072265625 26.38861083984375 551.2945556640625 9.805328369140625 551.072265625 C 4.43120288848877 551.00048828125 3.516912460327148 550.7846069335938 0.00079345703125 550.3403930664062 L 0.00079345703125 4.782620429992676 C -0.0009765625 -0.6975601315498352 0.00079345703125 4.782620429992676 0.00079345703125 4.782620429992676 C 0.00079345703125 4.782620429992676 26.69540405273438 47.94431304931641 89.28125 48.96817016601562 C 151.8671722412109 49.99203109741211 180.0093231201172 10.67197036743164 249.907470703125 13.08563232421875 C 319.8055114746094 15.49929428100586 364.949951171875 91.57168579101562 364.949951171875 103.3846435546875 C 360.0420532226562 593.9100341796875 367.7494201660156 551.072265625 356.909423828125 551.072265625 Z" fill="#40aef8" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_49cb7q =
-    '<svg viewBox="43.3 572.5 14.0 11.7" ><path transform="translate(38.8, 565.75)" d="M 18.5 12.29166603088379 L 12.66666603088379 6.749999523162842 L 12.66666603088379 9.86113452911377 C 7.222197532653809 10.63890075683594 5.27776575088501 14.52780246734619 4.5 18.41666603088379 C 6.444432258605957 15.69446754455566 8.777765274047852 14.44992637634277 12.66666603088379 14.44992637634277 L 12.66666603088379 17.63890075683594 L 18.5 12.29166603088379 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_uci83i =
-    '<svg viewBox="196.0 573.0 12.6 11.0" ><path transform="translate(196.0, 570.75)" d="M 12.57142925262451 5 L 12.57142925262451 12.07142925262451 C 12.57142925262451 12.7220983505249 12.0435266494751 13.25 11.39285755157471 13.25 L 1.178571462631226 13.25 C 0.527901828289032 13.25 0 12.7220983505249 0 12.07142925262451 L 0 5 C 0 4.349330902099609 0.527901828289032 3.821428775787354 1.178571462631226 3.821428775787354 L 3.339285850524902 3.821428775787354 L 3.641294717788696 3.013616323471069 C 3.813169717788696 2.55446457862854 4.252678394317627 2.250000238418579 4.743750095367432 2.250000238418579 L 7.825222969055176 2.250000238418579 C 8.31629467010498 2.250000238418579 8.755803108215332 2.55446457862854 8.927678108215332 3.013616323471069 L 9.232143402099609 3.821428775787354 L 11.39285755157471 3.821428775787354 C 12.0435266494751 3.821428775787354 12.57142925262451 4.349330902099609 12.57142925262451 5 Z M 9.232143402099609 8.535715103149414 C 9.232143402099609 6.91026782989502 7.911160945892334 5.589285850524902 6.285714626312256 5.589285850524902 C 4.66026782989502 5.589285850524902 3.339285850524902 6.91026782989502 3.339285850524902 8.535715103149414 C 3.339285850524902 10.16116142272949 4.66026782989502 11.48214340209961 6.285714626312256 11.48214340209961 C 7.911160945892334 11.48214340209961 9.232143402099609 10.16116142272949 9.232143402099609 8.535715103149414 Z M 8.446429252624512 8.535715103149414 C 8.446429252624512 9.7265625 7.4765625 10.69642925262451 6.285714626312256 10.69642925262451 C 5.094866275787354 10.69642925262451 4.125 9.7265625 4.125 8.535715103149414 C 4.125 7.344866275787354 5.094866275787354 6.375000476837158 6.285714626312256 6.375000476837158 C 7.4765625 6.375000476837158 8.446429252624512 7.344866275787354 8.446429252624512 8.535715103149414 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_h5b1le =
+    '<svg viewBox="33.7 214.3 18.3 19.8" ><path transform="matrix(0.951057, 0.309017, -0.309017, 0.951057, -1625.68, -1149.54)" d="M 2005.04931640625 799.0330200195312 L 2018.146118164062 799.0330200195312 C 2018.84814453125 798.3679809570312 2017.66015625 796.85498046875 2016.419189453125 796.7540283203125 C 2015.880126953125 796.7080078125 2015.19921875 796.8350219726562 2014.420166015625 797.0189819335938 C 2014.240234375 794.3410034179688 2013.211181640625 782.3060302734375 2009.332275390625 782.7890014648438 C 2004.970336914062 783.3309936523438 2009.332275390625 788.0900268554688 2010.565185546875 790.906982421875 C 2011.478149414062 792.9940185546875 2012.442138671875 795.9860229492188 2012.882202148438 797.3989868164062 C 2012.528198242188 797.4849853515625 2012.1611328125 797.5689697265625 2011.787231445312 797.64599609375 C 2011.209228515625 795.6610107421875 2009.058349609375 788.9829711914062 2006.322265625 789.3720092773438 C 2003.111328125 789.8280029296875 2004.40234375 792.5050048828125 2006.678344726562 794.093994140625 C 2008.348266601562 795.2630004882812 2010.399169921875 796.9240112304688 2011.373168945312 797.7260131835938 C 2010.548217773438 797.8770141601562 2009.686157226562 797.97900390625 2008.812255859375 797.9559936523438 C 2006.568237304688 797.89599609375 2005.473266601562 798.635986328125 2005.04931640625 799.0330200195312 Z" fill="#6d89d0" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
+const String _svg_cys9bi =
+    '<svg viewBox="0.0 211.0 363.8 549.6" ><path transform="translate(0.0, 208.62)" d="M 356.909423828125 551.072265625 C 84.41183471679688 551.072265625 26.38861083984375 551.2945556640625 9.805328369140625 551.072265625 C 4.43120288848877 551.00048828125 3.516912460327148 550.7846069335938 0.00079345703125 550.3403930664062 L 0.00079345703125 4.782620429992676 C -0.0009765625 -0.6975601315498352 0.00079345703125 4.782620429992676 0.00079345703125 4.782620429992676 C 0.00079345703125 4.782620429992676 26.69540405273438 47.94431304931641 89.28125 48.96817016601562 C 151.8671722412109 49.99203109741211 180.0093231201172 10.67197036743164 249.907470703125 13.08563232421875 C 319.8055114746094 15.49929428100586 363.75146484375 90.62973022460938 363.75146484375 102.4426879882812 C 358.8435668945312 592.9681396484375 367.7494201660156 551.072265625 356.909423828125 551.072265625 Z" fill="#40aef8" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_5sy4ln =
     '<svg viewBox="4.5 10.1 14.7 1.9" ><path  d="M 18.59482383728027 12.01885223388672 L 5.112818717956543 12.01885223388672 C 4.775768280029297 12.01885223388672 4.5 11.59273529052734 4.5 11.07192611694336 L 4.5 11.07192611694336 C 4.5 10.55111694335938 4.775768280029297 10.125 5.112818717956543 10.125 L 18.59482383728027 10.125 C 18.9318733215332 10.125 19.2076416015625 10.55111694335938 19.2076416015625 11.07192611694336 L 19.2076416015625 11.07192611694336 C 19.2076416015625 11.59273529052734 18.9318733215332 12.01885223388672 18.59482383728027 12.01885223388672 Z" fill="#54ba81" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_xvx8op =
@@ -2073,3 +2154,8 @@ const String _svg_lsleou =
     '<svg viewBox="4.5 17.9 14.7 1.9" ><path transform="translate(0.0, -5.75)" d="M 18.59482383728027 25.51499938964844 L 5.112818717956543 25.51499938964844 C 4.775768280029297 25.51499938964844 4.5 25.08975028991699 4.5 24.56999969482422 L 4.5 24.56999969482422 C 4.5 24.05025100708008 4.775768280029297 23.625 5.112818717956543 23.625 L 18.59482383728027 23.625 C 18.9318733215332 23.625 19.2076416015625 24.05025100708008 19.2076416015625 24.56999969482422 L 19.2076416015625 24.56999969482422 C 19.2076416015625 25.08975028991699 18.9318733215332 25.51499938964844 18.59482383728027 25.51499938964844 Z" fill="#54ba81" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_wnugql =
     '<svg viewBox="24.0 22.0 6.0 10.5" ><path transform="translate(12.75, 15.81)" d="M 13.05930042266846 11.43977355957031 L 17.03031349182129 7.471888542175293 C 17.32399749755859 7.178202629089355 17.32399749755859 6.703305244445801 17.03031349182129 6.412744998931885 C 16.73662376403809 6.119058132171631 16.2617301940918 6.122181415557861 15.96804141998291 6.412744998931885 L 11.46902370452881 10.90863990783691 C 11.1847095489502 11.19295310974121 11.1784610748291 11.64910507202148 11.44715213775635 11.94279003143311 L 15.96491813659668 16.46992874145508 C 16.11176109313965 16.61677169799805 16.30546951293945 16.68863105773926 16.49605178833008 16.68863105773926 C 16.68663597106934 16.68863105773926 16.88034248352051 16.61677169799805 17.02718734741211 16.46992874145508 C 17.32087326049805 16.17624282836914 17.32087326049805 15.70134544372559 17.02718734741211 15.41078281402588 L 13.05930042266846 11.43977355957031 Z" fill="#54ba81" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_an1zau =
+    '<svg viewBox="41.3 623.5 14.0 11.7" ><path transform="translate(36.8, 616.75)" d="M 18.5 12.29166603088379 L 12.66666603088379 6.749999523162842 L 12.66666603088379 9.86113452911377 C 7.222197532653809 10.63890075683594 5.27776575088501 14.52780246734619 4.5 18.41666603088379 C 6.444432258605957 15.69446754455566 8.777765274047852 14.44992637634277 12.66666603088379 14.44992637634277 L 12.66666603088379 17.63890075683594 L 18.5 12.29166603088379 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_awyi1c =
+    '<svg viewBox="230.0 624.0 12.6 11.0" ><path transform="translate(230.0, 621.75)" d="M 12.57142925262451 5 L 12.57142925262451 12.07142925262451 C 12.57142925262451 12.7220983505249 12.0435266494751 13.25 11.39285755157471 13.25 L 1.178571462631226 13.25 C 0.527901828289032 13.25 0 12.7220983505249 0 12.07142925262451 L 0 5 C 0 4.349330902099609 0.527901828289032 3.821428775787354 1.178571462631226 3.821428775787354 L 3.339285850524902 3.821428775787354 L 3.641294717788696 3.013616323471069 C 3.813169717788696 2.55446457862854 4.252678394317627 2.250000238418579 4.743750095367432 2.250000238418579 L 7.825222969055176 2.250000238418579 C 8.31629467010498 2.250000238418579 8.755803108215332 2.55446457862854 8.927678108215332 3.013616323471069 L 9.232143402099609 3.821428775787354 L 11.39285755157471 3.821428775787354 C 12.0435266494751 3.821428775787354 12.57142925262451 4.349330902099609 12.57142925262451 5 Z M 9.232143402099609 8.535715103149414 C 9.232143402099609 6.91026782989502 7.911160945892334 5.589285850524902 6.285714626312256 5.589285850524902 C 4.66026782989502 5.589285850524902 3.339285850524902 6.91026782989502 3.339285850524902 8.535715103149414 C 3.339285850524902 10.16116142272949 4.66026782989502 11.48214340209961 6.285714626312256 11.48214340209961 C 7.911160945892334 11.48214340209961 9.232143402099609 10.16116142272949 9.232143402099609 8.535715103149414 Z M 8.446429252624512 8.535715103149414 C 8.446429252624512 9.7265625 7.4765625 10.69642925262451 6.285714626312256 10.69642925262451 C 5.094866275787354 10.69642925262451 4.125 9.7265625 4.125 8.535715103149414 C 4.125 7.344866275787354 5.094866275787354 6.375000476837158 6.285714626312256 6.375000476837158 C 7.4765625 6.375000476837158 8.446429252624512 7.344866275787354 8.446429252624512 8.535715103149414 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+
