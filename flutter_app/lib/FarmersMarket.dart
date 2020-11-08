@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'Dashboard.dart';
+import 'Friends.dart';
 class FarmersMarket extends StatelessWidget {
   FarmersMarket({
     Key key,
@@ -1702,80 +1703,62 @@ class FarmersMarket extends StatelessWidget {
             ),
           ),
           Container(
+            // padding: const EdgeInsets.fromLTRB(10, 8, 170, 8),
+            margin: new EdgeInsets.fromLTRB(32, 370.0, 88.0, 100.0),
             padding: EdgeInsets.all(12),
+
             child: Column(
               children: <Widget>[
 
+                SizedBox(height: 16,),
                 Container(
-                  margin: new EdgeInsets.fromLTRB(33, 435.0, 110.0, 90.0),
-                  height: 5 * 24.0,
-                  child:       TextField(
+                  decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(6.0),
+                          border: Border.all(width: 1.0, color: const Color(0xffffffff)),
+                        ),
+                  child: TextField(
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: 'Default TextField',
+                      border: InputBorder.none,
+                      labelText: 'Amount Spent',
+                      labelStyle: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: const Color(0xffffffff),
+                        height: 1.3571428571428572,
+                      ),
+                      isDense: true,                      // Added this
+                      contentPadding: EdgeInsets.all(8),  // Added this
                     ),
                   ),
                 ),
-                SizedBox(height: 16,),
-                // TextField(
-                //   decoration: InputDecoration(
-                //     border: OutlineInputBorder(),
-                //     labelText: 'Densed TextField',
-                //     isDense: true,                      // Added this
-                //   ),
-                // ),
+                SizedBox(height: 12,),
+                Container(
+                    decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(6.0),
+                    border: Border.all(width: 1.0, color: const Color(0xffffffff)),
+                  ),
+                  child: TextField(
 
+                    maxLines: 5,
+                    decoration: InputDecoration(
+                      // contentPadding: new EdgeInsets.only(top: 1),
+
+                      border: InputBorder.none,
+                      labelText: 'Comment',
+                      labelStyle: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontSize: 14,
+                                      color: const Color(0xffffffff),
+                                      height: 1.3571428571428572,
+                                    ),
+                      contentPadding: EdgeInsets.all(8),  // Added this
+                    ),
+                  ),
+                )
               ],
             ),
           ),
-          Transform.translate(
-            offset: Offset(61.0, 413.0),
-            child: Text(
-              'Amount Spent',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xffffffff),
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),// Amount Spent
-          Transform.translate(
-            offset: Offset(43.0, 404.0),
-            child: Container(
-              width: 273.0,
-              height: 37.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                border: Border.all(width: 1.0, color: const Color(0xffffffff)),
-              ),
-            ),
-          ),// amount spent border
-          Transform.translate(
-            offset: Offset(43.0, 455.0),
-            child: Container(
-              width: 273.0,
-              height: 99.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                border: Border.all(width: 1.0, color: const Color(0xffffffff)),
-              ),
-            ),
-          ),// comments border
-          Transform.translate(
-            offset: Offset(62.0, 466.0),
-            child: Text(
-              'Comments',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xffffffff),
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),// commentsss
+
           Transform.translate(
             offset: Offset(24.0, 22.0),
             child: SvgPicture.string(
@@ -1834,19 +1817,29 @@ class FarmersMarket extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(43.0, 569.0),
+
+          /****** SUBMIT BUTTON ****************************/
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Dashboard()), // either back to Dashboard or Friends
+              );
+            },
             child: Container(
               width: 273.0,
               height: 37.0,
+              margin: new EdgeInsets.fromLTRB(45, 599.0, 100.0, 90.0),
+
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6.0),
                 color: const Color(0xffffffff),
               ),
             ),
           ),
+
           Transform.translate(
-            offset: Offset(153.0, 578.0),
+            offset: Offset(153.0, 608.0),
             child: Text(
               'Submit',
               style: TextStyle(
@@ -1858,16 +1851,16 @@ class FarmersMarket extends StatelessWidget {
               ),
               textAlign: TextAlign.left,
             ),
-          ),
+          ), // Submit text
           Transform.translate(
-            offset: Offset(41.3, 623.5),
+            offset: Offset(41.3, 643.5),
             child: SvgPicture.string(
               _svg_an1zau,
               allowDrawingOutsideViewBox: true,
             ),
           ),
           Transform.translate(
-            offset: Offset(65.0, 621.0),
+            offset: Offset(65.0, 641.0),
             child: Text(
               'Share to Friends',
               style: TextStyle(
@@ -1880,14 +1873,14 @@ class FarmersMarket extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(230.0, 624.0),
+            offset: Offset(230.0, 644.0),
             child: SvgPicture.string(
               _svg_awyi1c,
               allowDrawingOutsideViewBox: true,
             ),
           ),
           Transform.translate(
-            offset: Offset(252.0, 621.0),
+            offset: Offset(252.0, 641.0),
             child: Text(
               'Add Picture',
               style: TextStyle(
