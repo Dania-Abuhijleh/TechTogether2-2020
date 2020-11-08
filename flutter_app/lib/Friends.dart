@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/pinned.dart';
+import './Dashboard.dart';
+import 'package:adobe_xd/page_link.dart';
+import './ActivityCategories.dart';
+import './Redeem.dart';
 
 class Friends extends StatelessWidget {
   Friends({
@@ -355,16 +359,26 @@ class Friends extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(30.6, 736.0),
-            child: SizedBox(
-              width: 29.0,
-              child: Text(
-                'Home',
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 8,
-                  color: const Color(0xff54ba81),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Dashboard(),
                 ),
-                textAlign: TextAlign.center,
+              ],
+              child: SizedBox(
+                width: 29.0,
+                child: Text(
+                  'Home',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 8,
+                    color: const Color(0xff54ba81),
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
           ),
@@ -386,17 +400,27 @@ class Friends extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(163.8, 736.0),
-            child: SizedBox(
-              width: 50.0,
-              child: Text(
-                'Add a task',
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 8,
-                  color: const Color(0xff54ba81),
-                  fontWeight: FontWeight.w300,
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => ActivityCategories(),
                 ),
-                textAlign: TextAlign.center,
+              ],
+              child: SizedBox(
+                width: 50.0,
+                child: Text(
+                  'Add a task',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 8,
+                    color: const Color(0xff54ba81),
+                    fontWeight: FontWeight.w300,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
           ),
@@ -418,17 +442,27 @@ class Friends extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(311.6, 735.0),
-            child: SizedBox(
-              width: 41.0,
-              child: Text(
-                'Rewards',
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 8,
-                  color: const Color(0xff54ba81),
-                  fontWeight: FontWeight.w300,
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Redeem(),
                 ),
-                textAlign: TextAlign.center,
+              ],
+              child: SizedBox(
+                width: 41.0,
+                child: Text(
+                  'Rewards',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 8,
+                    color: const Color(0xff54ba81),
+                    fontWeight: FontWeight.w300,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
           ),
@@ -897,116 +931,95 @@ class Friends extends StatelessWidget {
             offset: Offset(137.0, 17.0),
             child:
                 // Adobe XD layer: 'Logo_White' (group)
-                SizedBox(
-              width: 81.0,
-              height: 20.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(26.0, 6.0, 55.0, 11.0),
-                    size: Size(81.0, 20.0),
-                    pinRight: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text.rich(
-                      TextSpan(
-                        style: TextStyle(
-                          fontFamily: 'Gilroy',
-                          fontSize: 11,
-                          color: const Color(0xff4f5351),
-                          height: 2.5454545454545454,
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Dashboard(),
+                ),
+              ],
+              child: SizedBox(
+                width: 81.0,
+                height: 20.0,
+                child: Stack(
+                  children: <Widget>[
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(26.0, 6.0, 55.0, 11.0),
+                      size: Size(81.0, 20.0),
+                      pinRight: true,
+                      fixedWidth: true,
+                      fixedHeight: true,
+                      child: Text.rich(
+                        TextSpan(
+                          style: TextStyle(
+                            fontFamily: 'Gilroy',
+                            fontSize: 11,
+                            color: const Color(0xff4f5351),
+                            height: 2.5454545454545454,
+                          ),
+                          children: [
+                            TextSpan(
+                              text: 'carbon',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                            TextSpan(
+                              text: 'print',
+                              style: TextStyle(
+                                color: const Color(0xff54ba81),
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                          ],
                         ),
-                        children: [
-                          TextSpan(
-                            text: 'carbon',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                          TextSpan(
-                            text: 'print',
-                            style: TextStyle(
-                              color: const Color(0xff54ba81),
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                        ],
+                        textAlign: TextAlign.left,
                       ),
-                      textAlign: TextAlign.left,
                     ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
-                    size: Size(81.0, 20.0),
-                    pinLeft: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    fixedWidth: true,
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
-                          size: Size(20.0, 20.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child:
-                              // Adobe XD layer: 'Logo_White' (group)
-                              Stack(
-                            children: <Widget>[
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
-                                size: Size(20.0, 20.0),
-                                pinLeft: true,
-                                pinRight: true,
-                                pinTop: true,
-                                pinBottom: true,
-                                child:
-                                    // Adobe XD layer: 'Ellipse 2' (shape)
-                                    Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(
-                                        Radius.elliptical(9999.0, 9999.0)),
-                                    color: const Color(0xff54ba81),
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
+                      size: Size(81.0, 20.0),
+                      pinLeft: true,
+                      pinTop: true,
+                      pinBottom: true,
+                      fixedWidth: true,
+                      child: Stack(
+                        children: <Widget>[
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
+                            size: Size(20.0, 20.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinTop: true,
+                            pinBottom: true,
+                            child:
+                                // Adobe XD layer: 'Logo_White' (group)
+                                Stack(
+                              children: <Widget>[
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
+                                  size: Size(20.0, 20.0),
+                                  pinLeft: true,
+                                  pinRight: true,
+                                  pinTop: true,
+                                  pinBottom: true,
+                                  child:
+                                      // Adobe XD layer: 'Ellipse 2' (shape)
+                                      Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                          Radius.elliptical(9999.0, 9999.0)),
+                                      color: const Color(0xff54ba81),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(8.2, 7.3, 5.9, 8.0),
-                                size: Size(20.0, 20.0),
-                                fixedWidth: true,
-                                fixedHeight: true,
-                                child:
-                                    // Adobe XD layer: 'human-feet-shape' (group)
-                                    Stack(
-                                  children: <Widget>[
-                                    Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
-                                      size: Size(5.9, 8.0),
-                                      pinLeft: true,
-                                      pinRight: true,
-                                      pinTop: true,
-                                      pinBottom: true,
-                                      child:
-                                          // Adobe XD layer: 'Path 429' (shape)
-                                          SvgPicture.string(
-                                        _svg_j093nr,
-                                        allowDrawingOutsideViewBox: true,
-                                        fit: BoxFit.fill,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(5.7, 3.3, 5.9, 8.0),
-                                size: Size(20.0, 20.0),
-                                pinTop: true,
-                                fixedWidth: true,
-                                fixedHeight: true,
-                                child: Transform.rotate(
-                                  angle: 0.9774,
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(8.2, 7.3, 5.9, 8.0),
+                                  size: Size(20.0, 20.0),
+                                  fixedWidth: true,
+                                  fixedHeight: true,
                                   child:
                                       // Adobe XD layer: 'human-feet-shape' (group)
                                       Stack(
@@ -1022,7 +1035,7 @@ class Friends extends StatelessWidget {
                                         child:
                                             // Adobe XD layer: 'Path 429' (shape)
                                             SvgPicture.string(
-                                          _svg_oent07,
+                                          _svg_j093nr,
                                           allowDrawingOutsideViewBox: true,
                                           fit: BoxFit.fill,
                                         ),
@@ -1030,31 +1043,63 @@ class Friends extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
-                          size: Size(20.0, 20.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.all(
-                                  Radius.elliptical(9999.0, 9999.0)),
-                              color: const Color(0xffffffff),
-                              border: Border.all(
-                                  width: 1.0, color: const Color(0xff707070)),
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(5.7, 3.3, 5.9, 8.0),
+                                  size: Size(20.0, 20.0),
+                                  pinTop: true,
+                                  fixedWidth: true,
+                                  fixedHeight: true,
+                                  child: Transform.rotate(
+                                    angle: 0.9774,
+                                    child:
+                                        // Adobe XD layer: 'human-feet-shape' (group)
+                                        Stack(
+                                      children: <Widget>[
+                                        Pinned.fromSize(
+                                          bounds:
+                                              Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
+                                          size: Size(5.9, 8.0),
+                                          pinLeft: true,
+                                          pinRight: true,
+                                          pinTop: true,
+                                          pinBottom: true,
+                                          child:
+                                              // Adobe XD layer: 'Path 429' (shape)
+                                              SvgPicture.string(
+                                            _svg_oent07,
+                                            allowDrawingOutsideViewBox: true,
+                                            fit: BoxFit.fill,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                        ),
-                      ],
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
+                            size: Size(20.0, 20.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinTop: true,
+                            pinBottom: true,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(
+                                    Radius.elliptical(9999.0, 9999.0)),
+                                color: const Color(0xffffffff),
+                                border: Border.all(
+                                    width: 1.0, color: const Color(0xff707070)),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

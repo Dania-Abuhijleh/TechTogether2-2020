@@ -3,6 +3,7 @@ import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'Dashboard.dart';
 import 'Friends.dart';
+import 'Redeem.dart';
 class FarmersMarket extends StatelessWidget {
   FarmersMarket({
     Key key,
@@ -61,7 +62,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(33.0, 0.0, 48.4, 132.4),
+                                      Rect.fromLTWH(33.0, 0.0, 48.4, 132.4),
                                       size: Size(120.2, 164.1),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -89,7 +90,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_pyeysp,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -104,7 +105,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_z2s9t5,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -119,7 +120,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_iga6m5,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -134,7 +135,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_gze9lk,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -148,7 +149,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_2aohry,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -162,7 +163,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_jeuo62,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -200,7 +201,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(46.3, 69.2, 73.9, 94.9),
+                                      Rect.fromLTWH(46.3, 69.2, 73.9, 94.9),
                                       size: Size(120.2, 164.1),
                                       pinRight: true,
                                       pinBottom: true,
@@ -240,7 +241,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 70.6, 39.6, 47.5),
+                                      Rect.fromLTWH(0.0, 70.6, 39.6, 47.5),
                                       size: Size(120.2, 164.1),
                                       pinLeft: true,
                                       fixedWidth: true,
@@ -309,7 +310,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_ux3yer,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -324,7 +325,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_scqiea,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -375,7 +376,7 @@ class FarmersMarket extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_f1blpk,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -397,7 +398,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.1, 0.0, 12.0, 7.6),
+                                      Rect.fromLTWH(8.1, 0.0, 12.0, 7.6),
                                       size: Size(20.1, 19.9),
                                       pinRight: true,
                                       pinTop: true,
@@ -424,7 +425,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 4.1, 14.7, 15.7),
+                                      Rect.fromLTWH(0.0, 4.1, 14.7, 15.7),
                                       size: Size(20.1, 19.9),
                                       pinLeft: true,
                                       pinBottom: true,
@@ -521,7 +522,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 8.4, 35.4, 29.9),
+                                      Rect.fromLTWH(0.0, 8.4, 35.4, 29.9),
                                       size: Size(35.4, 46.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -535,7 +536,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.6, 10.5, 5.9, 5.8),
+                                      Rect.fromLTWH(23.6, 10.5, 5.9, 5.8),
                                       size: Size(35.4, 46.6),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -547,7 +548,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 18.9, 35.4, 27.7),
+                                      Rect.fromLTWH(0.0, 18.9, 35.4, 27.7),
                                       size: Size(35.4, 46.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -561,7 +562,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(10.4, 0.0, 10.9, 8.0),
+                                      Rect.fromLTWH(10.4, 0.0, 10.9, 8.0),
                                       size: Size(35.4, 46.6),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -601,7 +602,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(6.9, 9.2, 13.7, 5.2),
+                                      Rect.fromLTWH(6.9, 9.2, 13.7, 5.2),
                                       size: Size(35.4, 46.6),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -613,7 +614,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(5.5, 14.7, 1.0, 1.0),
+                                      Rect.fromLTWH(5.5, 14.7, 1.0, 1.0),
                                       size: Size(35.4, 46.6),
                                       pinLeft: true,
                                       fixedWidth: true,
@@ -626,7 +627,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(4.8, 4.0, 11.0, 10.4),
+                                      Rect.fromLTWH(4.8, 4.0, 11.0, 10.4),
                                       size: Size(35.4, 46.6),
                                       pinLeft: true,
                                       pinTop: true,
@@ -762,7 +763,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 27.6, 7.4, 4.2),
+                                      Rect.fromLTWH(0.0, 27.6, 7.4, 4.2),
                                       size: Size(45.1, 32.6),
                                       pinLeft: true,
                                       pinBottom: true,
@@ -776,7 +777,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(4.8, 0.0, 40.2, 32.6),
+                                      Rect.fromLTWH(4.8, 0.0, 40.2, 32.6),
                                       size: Size(45.1, 32.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -1029,7 +1030,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.6, 0.0, 12.6, 10.5),
+                                      Rect.fromLTWH(8.6, 0.0, 12.6, 10.5),
                                       size: Size(21.1, 24.6),
                                       pinRight: true,
                                       pinTop: true,
@@ -1056,7 +1057,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 7.1, 16.6, 17.4),
+                                      Rect.fromLTWH(0.0, 7.1, 16.6, 17.4),
                                       size: Size(21.1, 24.6),
                                       pinLeft: true,
                                       pinBottom: true,
@@ -1138,7 +1139,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(36.8, 0.0, 11.0, 73.1),
+                                      Rect.fromLTWH(36.8, 0.0, 11.0, 73.1),
                                       size: Size(47.8, 73.1),
                                       pinRight: true,
                                       pinTop: true,
@@ -1165,7 +1166,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 11.0, 73.1),
+                                      Rect.fromLTWH(0.0, 0.0, 11.0, 73.1),
                                       size: Size(47.8, 73.1),
                                       pinLeft: true,
                                       pinTop: true,
@@ -1192,7 +1193,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(7.0, 0.0, 4.1, 11.7),
+                                      Rect.fromLTWH(7.0, 0.0, 4.1, 11.7),
                                       size: Size(47.8, 73.1),
                                       pinLeft: true,
                                       pinTop: true,
@@ -1206,7 +1207,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(36.8, 0.0, 4.2, 10.4),
+                                      Rect.fromLTWH(36.8, 0.0, 4.2, 10.4),
                                       size: Size(47.8, 73.1),
                                       pinRight: true,
                                       pinTop: true,
@@ -1283,7 +1284,7 @@ class FarmersMarket extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 45.8, 51.3),
+                                      Rect.fromLTWH(0.0, 0.0, 45.8, 51.3),
                                       size: Size(45.8, 51.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -1297,7 +1298,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(1.1, 1.2, 43.5, 48.8),
+                                      Rect.fromLTWH(1.1, 1.2, 43.5, 48.8),
                                       size: Size(45.8, 51.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -1311,7 +1312,7 @@ class FarmersMarket extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(3.9, 4.4, 37.9, 42.5),
+                                      Rect.fromLTWH(3.9, 4.4, 37.9, 42.5),
                                       size: Size(45.8, 51.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -1713,9 +1714,9 @@ class FarmersMarket extends StatelessWidget {
                 SizedBox(height: 16,),
                 Container(
                   decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(6.0),
-                          border: Border.all(width: 1.0, color: const Color(0xffffffff)),
-                        ),
+                    borderRadius: BorderRadius.circular(6.0),
+                    border: Border.all(width: 1.0, color: const Color(0xffffffff)),
+                  ),
                   child: TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
@@ -1733,7 +1734,7 @@ class FarmersMarket extends StatelessWidget {
                 ),
                 SizedBox(height: 12,),
                 Container(
-                    decoration: BoxDecoration(
+                  decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6.0),
                     border: Border.all(width: 1.0, color: const Color(0xffffffff)),
                   ),
@@ -1746,11 +1747,11 @@ class FarmersMarket extends StatelessWidget {
                       border: InputBorder.none,
                       labelText: 'Comment',
                       labelStyle: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 14,
-                                      color: const Color(0xffffffff),
-                                      height: 1.3571428571428572,
-                                    ),
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: const Color(0xffffffff),
+                        height: 1.3571428571428572,
+                      ),
                       contentPadding: EdgeInsets.all(8),  // Added this
                     ),
                   ),
@@ -1769,8 +1770,8 @@ class FarmersMarket extends StatelessWidget {
           Transform.translate(
             offset: Offset(321.0, 22.0),
             child:
-                // Adobe XD layer: 'Icon ionic-ios-menu' (group)
-                SizedBox(
+            // Adobe XD layer: 'Icon ionic-ios-menu' (group)
+            SizedBox(
               width: 15.0,
               height: 10.0,
               child: Stack(
@@ -1823,7 +1824,7 @@ class FarmersMarket extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Dashboard()), // either back to Dashboard or Friends
+                MaterialPageRoute(builder: (context) => Redeem()), // either back to Dashboard or Friends
               );
             },
             child: Container(
@@ -2118,3 +2119,4 @@ const String _svg_an1zau =
     '<svg viewBox="41.3 623.5 14.0 11.7" ><path transform="translate(36.8, 616.75)" d="M 18.5 12.29166603088379 L 12.66666603088379 6.749999523162842 L 12.66666603088379 9.86113452911377 C 7.222197532653809 10.63890075683594 5.27776575088501 14.52780246734619 4.5 18.41666603088379 C 6.444432258605957 15.69446754455566 8.777765274047852 14.44992637634277 12.66666603088379 14.44992637634277 L 12.66666603088379 17.63890075683594 L 18.5 12.29166603088379 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_awyi1c =
     '<svg viewBox="230.0 624.0 12.6 11.0" ><path transform="translate(230.0, 621.75)" d="M 12.57142925262451 5 L 12.57142925262451 12.07142925262451 C 12.57142925262451 12.7220983505249 12.0435266494751 13.25 11.39285755157471 13.25 L 1.178571462631226 13.25 C 0.527901828289032 13.25 0 12.7220983505249 0 12.07142925262451 L 0 5 C 0 4.349330902099609 0.527901828289032 3.821428775787354 1.178571462631226 3.821428775787354 L 3.339285850524902 3.821428775787354 L 3.641294717788696 3.013616323471069 C 3.813169717788696 2.55446457862854 4.252678394317627 2.250000238418579 4.743750095367432 2.250000238418579 L 7.825222969055176 2.250000238418579 C 8.31629467010498 2.250000238418579 8.755803108215332 2.55446457862854 8.927678108215332 3.013616323471069 L 9.232143402099609 3.821428775787354 L 11.39285755157471 3.821428775787354 C 12.0435266494751 3.821428775787354 12.57142925262451 4.349330902099609 12.57142925262451 5 Z M 9.232143402099609 8.535715103149414 C 9.232143402099609 6.91026782989502 7.911160945892334 5.589285850524902 6.285714626312256 5.589285850524902 C 4.66026782989502 5.589285850524902 3.339285850524902 6.91026782989502 3.339285850524902 8.535715103149414 C 3.339285850524902 10.16116142272949 4.66026782989502 11.48214340209961 6.285714626312256 11.48214340209961 C 7.911160945892334 11.48214340209961 9.232143402099609 10.16116142272949 9.232143402099609 8.535715103149414 Z M 8.446429252624512 8.535715103149414 C 8.446429252624512 9.7265625 7.4765625 10.69642925262451 6.285714626312256 10.69642925262451 C 5.094866275787354 10.69642925262451 4.125 9.7265625 4.125 8.535715103149414 C 4.125 7.344866275787354 5.094866275787354 6.375000476837158 6.285714626312256 6.375000476837158 C 7.4765625 6.375000476837158 8.446429252624512 7.344866275787354 8.446429252624512 8.535715103149414 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+

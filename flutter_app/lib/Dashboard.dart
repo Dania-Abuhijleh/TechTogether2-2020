@@ -52,7 +52,7 @@ class Dashboard extends StatelessWidget {
               height: 55.0,
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 image: DecorationImage(
                   image: const AssetImage(''),
                   fit: BoxFit.cover,
@@ -87,7 +87,7 @@ class Dashboard extends StatelessWidget {
               height: 20.0,
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 color: const Color(0x805cc690),
               ),
             ),
@@ -199,8 +199,8 @@ class Dashboard extends StatelessWidget {
           Transform.translate(
             offset: Offset(97.5, 723.2),
             child:
-                // Adobe XD layer: 'Icon ionic-ios-noti…' (group)
-                SizedBox(
+            // Adobe XD layer: 'Icon ionic-ios-noti…' (group)
+            SizedBox(
               width: 13.0,
               height: 14.0,
               child: Stack(
@@ -329,8 +329,8 @@ class Dashboard extends StatelessWidget {
                     pinTop: true,
                     pinBottom: true,
                     child:
-                        // Adobe XD layer: 'badge' (group)
-                        Stack(
+                    // Adobe XD layer: 'badge' (group)
+                    Stack(
                       children: <Widget>[
                         Pinned.fromSize(
                           bounds: Rect.fromLTWH(1.8, 0.0, 8.5, 8.3),
@@ -506,8 +506,8 @@ class Dashboard extends StatelessWidget {
           Transform.translate(
             offset: Offset(321.0, 22.0),
             child:
-                // Adobe XD layer: 'Icon ionic-ios-menu' (group)
-                SizedBox(
+            // Adobe XD layer: 'Icon ionic-ios-menu' (group)
+            SizedBox(
               width: 15.0,
               height: 10.0,
               child: Stack(
@@ -557,8 +557,8 @@ class Dashboard extends StatelessWidget {
           Transform.translate(
             offset: Offset(24.0, 118.0),
             child:
-                // Adobe XD layer: 'Icon feather-plus-c…' (group)
-                SizedBox(
+            // Adobe XD layer: 'Icon feather-plus-c…' (group)
+            SizedBox(
               width: 14.0,
               height: 14.0,
               child: Stack(
@@ -653,7 +653,7 @@ class Dashboard extends StatelessWidget {
               height: 25.0,
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 image: DecorationImage(
                   image: const AssetImage(''),
                   fit: BoxFit.cover,
@@ -699,7 +699,7 @@ class Dashboard extends StatelessWidget {
               height: 2.0,
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 color: const Color(0xff54ba81),
               ),
             ),
@@ -730,7 +730,7 @@ class Dashboard extends StatelessWidget {
               height: 25.0,
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 image: DecorationImage(
                   image: const AssetImage(''),
                   fit: BoxFit.cover,
@@ -776,7 +776,7 @@ class Dashboard extends StatelessWidget {
               height: 2.0,
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 color: const Color(0xff54ba81),
               ),
             ),
@@ -807,7 +807,7 @@ class Dashboard extends StatelessWidget {
               height: 25.0,
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 image: DecorationImage(
                   image: const AssetImage(''),
                   fit: BoxFit.cover,
@@ -853,7 +853,7 @@ class Dashboard extends StatelessWidget {
               height: 2.0,
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                 color: const Color(0xff54ba81),
               ),
             ),
@@ -892,8 +892,8 @@ class Dashboard extends StatelessWidget {
                     pinTop: true,
                     pinBottom: true,
                     child:
-                        // Adobe XD layer: 'Chart' (group)
-                        Stack(
+                    // Adobe XD layer: 'Chart' (group)
+                    Stack(
                       children: <Widget>[
                         Pinned.fromSize(
                           bounds: Rect.fromLTWH(11.0, 0.0, 299.5, 48.3),
@@ -903,8 +903,8 @@ class Dashboard extends StatelessWidget {
                           pinTop: true,
                           pinBottom: true,
                           child:
-                              // Adobe XD layer: 'Chart Grid' (shape)
-                              SvgPicture.string(
+                          // Adobe XD layer: 'Chart Grid' (shape)
+                          SvgPicture.string(
                             _svg_z280mo,
                             allowDrawingOutsideViewBox: true,
                             fit: BoxFit.fill,
@@ -918,8 +918,8 @@ class Dashboard extends StatelessWidget {
                           pinTop: true,
                           pinBottom: true,
                           child:
-                              // Adobe XD layer: 'Graph' (group)
-                              Stack(
+                          // Adobe XD layer: 'Graph' (group)
+                          Stack(
                             children: <Widget>[
                               Pinned.fromSize(
                                 bounds: Rect.fromLTWH(0.0, 0.0, 294.8, 42.0),
@@ -929,8 +929,8 @@ class Dashboard extends StatelessWidget {
                                 pinTop: true,
                                 pinBottom: true,
                                 child:
-                                    // Adobe XD layer: 'Bar.Graph' (shape)
-                                    SvgPicture.string(
+                                // Adobe XD layer: 'Bar.Graph' (shape)
+                                SvgPicture.string(
                                   _svg_arzd0z,
                                   allowDrawingOutsideViewBox: true,
                                   fit: BoxFit.fill,
@@ -944,8 +944,8 @@ class Dashboard extends StatelessWidget {
                                 pinTop: true,
                                 fixedHeight: true,
                                 child:
-                                    // Adobe XD layer: 'Line.Graph' (shape)
-                                    SvgPicture.string(
+                                // Adobe XD layer: 'Line.Graph' (shape)
+                                SvgPicture.string(
                                   _svg_z88df0,
                                   allowDrawingOutsideViewBox: true,
                                   fit: BoxFit.fill,
@@ -962,8 +962,8 @@ class Dashboard extends StatelessWidget {
                           pinBottom: true,
                           fixedWidth: true,
                           child:
-                              // Adobe XD layer: 'Y-Axis-Info' (group)
-                              Stack(
+                          // Adobe XD layer: 'Y-Axis-Info' (group)
+                          Stack(
                             children: <Widget>[
                               Pinned.fromSize(
                                 bounds: Rect.fromLTWH(0.0, 42.8, 4.0, 4.0),
@@ -973,8 +973,8 @@ class Dashboard extends StatelessWidget {
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
-                                    // Adobe XD layer: '$5k' (text)
-                                    Text(
+                                // Adobe XD layer: '$5k' (text)
+                                Text(
                                   '\$5k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -991,8 +991,8 @@ class Dashboard extends StatelessWidget {
                                 pinRight: true,
                                 fixedHeight: true,
                                 child:
-                                    // Adobe XD layer: '$10k' (text)
-                                    Text(
+                                // Adobe XD layer: '$10k' (text)
+                                Text(
                                   '\$10k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -1009,8 +1009,8 @@ class Dashboard extends StatelessWidget {
                                 pinRight: true,
                                 fixedHeight: true,
                                 child:
-                                    // Adobe XD layer: '$15k' (text)
-                                    Text(
+                                // Adobe XD layer: '$15k' (text)
+                                Text(
                                   '\$15k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -1027,8 +1027,8 @@ class Dashboard extends StatelessWidget {
                                 pinRight: true,
                                 fixedHeight: true,
                                 child:
-                                    // Adobe XD layer: '$20k' (text)
-                                    Text(
+                                // Adobe XD layer: '$20k' (text)
+                                Text(
                                   '\$20k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -1046,8 +1046,8 @@ class Dashboard extends StatelessWidget {
                                 pinTop: true,
                                 fixedHeight: true,
                                 child:
-                                    // Adobe XD layer: '$25k' (text)
-                                    Text(
+                                // Adobe XD layer: '$25k' (text)
+                                Text(
                                   '\$25k',
                                   style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
@@ -1144,8 +1144,8 @@ class Dashboard extends StatelessWidget {
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
-                        // Adobe XD layer: 'Icon ionic-ios-water' (shape)
-                        SvgPicture.string(
+                    // Adobe XD layer: 'Icon ionic-ios-water' (shape)
+                    SvgPicture.string(
                       _svg_p0gtzo,
                       allowDrawingOutsideViewBox: true,
                       fit: BoxFit.fill,
@@ -1490,8 +1490,8 @@ class Dashboard extends StatelessWidget {
           Transform.translate(
             offset: Offset(137.0, 17.0),
             child:
-                // Adobe XD layer: 'Logo_White' (group)
-                SizedBox(
+            // Adobe XD layer: 'Logo_White' (group)
+            SizedBox(
               width: 81.0,
               height: 20.0,
               child: Stack(
@@ -1546,8 +1546,8 @@ class Dashboard extends StatelessWidget {
                           pinTop: true,
                           pinBottom: true,
                           child:
-                              // Adobe XD layer: 'Logo_White' (group)
-                              Stack(
+                          // Adobe XD layer: 'Logo_White' (group)
+                          Stack(
                             children: <Widget>[
                               Pinned.fromSize(
                                 bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
@@ -1557,8 +1557,8 @@ class Dashboard extends StatelessWidget {
                                 pinTop: true,
                                 pinBottom: true,
                                 child:
-                                    // Adobe XD layer: 'Ellipse 2' (shape)
-                                    Container(
+                                // Adobe XD layer: 'Ellipse 2' (shape)
+                                Container(
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.all(
                                         Radius.elliptical(9999.0, 9999.0)),
@@ -1572,8 +1572,8 @@ class Dashboard extends StatelessWidget {
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
-                                    // Adobe XD layer: 'human-feet-shape' (group)
-                                    Stack(
+                                // Adobe XD layer: 'human-feet-shape' (group)
+                                Stack(
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds: Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
@@ -1583,8 +1583,8 @@ class Dashboard extends StatelessWidget {
                                       pinTop: true,
                                       pinBottom: true,
                                       child:
-                                          // Adobe XD layer: 'Path 429' (shape)
-                                          SvgPicture.string(
+                                      // Adobe XD layer: 'Path 429' (shape)
+                                      SvgPicture.string(
                                         _svg_gxpukw,
                                         allowDrawingOutsideViewBox: true,
                                         fit: BoxFit.fill,
@@ -1602,20 +1602,20 @@ class Dashboard extends StatelessWidget {
                                 child: Transform.rotate(
                                   angle: 0.9774,
                                   child:
-                                      // Adobe XD layer: 'human-feet-shape' (group)
-                                      Stack(
+                                  // Adobe XD layer: 'human-feet-shape' (group)
+                                  Stack(
                                     children: <Widget>[
                                       Pinned.fromSize(
                                         bounds:
-                                            Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
+                                        Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
                                         size: Size(5.9, 8.0),
                                         pinLeft: true,
                                         pinRight: true,
                                         pinTop: true,
                                         pinBottom: true,
                                         child:
-                                            // Adobe XD layer: 'Path 429' (shape)
-                                            SvgPicture.string(
+                                        // Adobe XD layer: 'Path 429' (shape)
+                                        SvgPicture.string(
                                           _svg_m3qj8y,
                                           allowDrawingOutsideViewBox: true,
                                           fit: BoxFit.fill,

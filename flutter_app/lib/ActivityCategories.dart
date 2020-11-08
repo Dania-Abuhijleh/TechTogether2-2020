@@ -3520,7 +3520,7 @@ class ActivityCategories extends StatelessWidget {
                 ],
               ),
             ),
-          ), // banner
+          ),
           Transform.translate(
             offset: Offset(0.3, 228.6),
             child: SvgPicture.string(
@@ -3546,7 +3546,7 @@ class ActivityCategories extends StatelessWidget {
                 allowDrawingOutsideViewBox: true,
               ),
             ),
-          ), // BACK ARROW
+          ),
           Transform.translate(
             offset: Offset(321.0, 22.0),
             child:
@@ -3597,7 +3597,7 @@ class ActivityCategories extends StatelessWidget {
                 ],
               ),
             ),
-          ), // drop down at the top right
+          ),
           Transform.translate(
             offset: Offset(34.0, 359.0),
             child: Text(
@@ -3610,7 +3610,7 @@ class ActivityCategories extends StatelessWidget {
               ),
               textAlign: TextAlign.left,
             ),
-          ), // Task categories TITLE
+          ),
           Transform.translate(
             offset: Offset(34.0, 399.0),
             child: PageLink(

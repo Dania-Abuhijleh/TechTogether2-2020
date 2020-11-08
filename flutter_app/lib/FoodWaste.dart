@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:adobe_xd/blend_mask.dart';
@@ -82,7 +83,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(222.7, 2.4, 7.2, 116.5),
+                                      Rect.fromLTWH(222.7, 2.4, 7.2, 116.5),
                                       size: Size(231.8, 127.3),
                                       pinRight: true,
                                       pinTop: true,
@@ -114,7 +115,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(180.1, 2.4, 7.2, 116.5),
+                                      Rect.fromLTWH(180.1, 2.4, 7.2, 116.5),
                                       size: Size(231.8, 127.3),
                                       pinTop: true,
                                       pinBottom: true,
@@ -128,7 +129,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(94.3, 2.4, 7.2, 116.5),
+                                      Rect.fromLTWH(94.3, 2.4, 7.2, 116.5),
                                       size: Size(231.8, 127.3),
                                       pinTop: true,
                                       pinBottom: true,
@@ -142,7 +143,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(137.1, 2.4, 7.2, 116.5),
+                                      Rect.fromLTWH(137.1, 2.4, 7.2, 116.5),
                                       size: Size(231.8, 127.3),
                                       pinTop: true,
                                       pinBottom: true,
@@ -156,7 +157,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 5.1, 78.4, 122.3),
+                                      Rect.fromLTWH(0.0, 5.1, 78.4, 122.3),
                                       size: Size(231.8, 127.3),
                                       pinLeft: true,
                                       pinTop: true,
@@ -170,7 +171,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(49.3, 5.1, 32.1, 120.5),
+                                      Rect.fromLTWH(49.3, 5.1, 32.1, 120.5),
                                       size: Size(231.8, 127.3),
                                       pinTop: true,
                                       pinBottom: true,
@@ -186,7 +187,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(52.0, 0.0, 37.6, 127.3),
+                                      Rect.fromLTWH(52.0, 0.0, 37.6, 127.3),
                                       size: Size(231.8, 127.3),
                                       pinTop: true,
                                       pinBottom: true,
@@ -199,7 +200,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(1.3, 117.7, 230.4, 9.7),
+                                      Rect.fromLTWH(1.3, 117.7, 230.4, 9.7),
                                       size: Size(231.8, 127.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -214,7 +215,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(1.3, 117.7, 230.4, 2.5),
+                                      Rect.fromLTWH(1.3, 117.7, 230.4, 2.5),
                                       size: Size(231.8, 127.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -229,7 +230,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(7.0, 15.0, 63.8, 96.7),
+                                      Rect.fromLTWH(7.0, 15.0, 63.8, 96.7),
                                       size: Size(231.8, 127.3),
                                       pinLeft: true,
                                       pinTop: true,
@@ -260,7 +261,7 @@ class FoodWaste extends StatelessWidget {
                                                     child: SvgPicture.string(
                                                       _svg_ehiezd,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -283,7 +284,7 @@ class FoodWaste extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 7.3, 51.4, 17.4),
+                                      Rect.fromLTWH(0.0, 7.3, 51.4, 17.4),
                                       size: Size(51.4, 25.3),
                                       pinLeft: true,
                                       pinRight: true,
@@ -297,7 +298,7 @@ class FoodWaste extends StatelessWidget {
                                               topLeft: Radius.circular(8.71),
                                               topRight: Radius.circular(8.71),
                                               bottomRight:
-                                                  Radius.circular(8.71),
+                                              Radius.circular(8.71),
                                               bottomLeft: Radius.circular(8.71),
                                             ),
                                             color: const Color(0xff000000),
@@ -307,7 +308,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(43.8, 0.0, 1.6, 25.3),
+                                      Rect.fromLTWH(43.8, 0.0, 1.6, 25.3),
                                       size: Size(51.4, 25.3),
                                       pinRight: true,
                                       pinTop: true,
@@ -325,7 +326,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(6.6, 0.0, 1.6, 25.3),
+                                      Rect.fromLTWH(6.6, 0.0, 1.6, 25.3),
                                       size: Size(51.4, 25.3),
                                       pinLeft: true,
                                       pinTop: true,
@@ -367,7 +368,7 @@ class FoodWaste extends StatelessWidget {
                               ),
                               Pinned.fromSize(
                                 bounds:
-                                    Rect.fromLTWH(244.1, 43.4, 100.7, 108.6),
+                                Rect.fromLTWH(244.1, 43.4, 100.7, 108.6),
                                 size: Size(344.8, 180.3),
                                 pinRight: true,
                                 fixedWidth: true,
@@ -376,7 +377,7 @@ class FoodWaste extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 95.1, 92.9),
+                                      Rect.fromLTWH(0.0, 0.0, 95.1, 92.9),
                                       size: Size(100.7, 108.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -390,7 +391,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(17.7, 15.6, 61.6, 77.4),
+                                      Rect.fromLTWH(17.7, 15.6, 61.6, 77.4),
                                       size: Size(100.7, 108.6),
                                       pinTop: true,
                                       pinBottom: true,
@@ -406,7 +407,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(95.1, 59.6, 2.2, 22.2),
+                                      Rect.fromLTWH(95.1, 59.6, 2.2, 22.2),
                                       size: Size(100.7, 108.6),
                                       pinRight: true,
                                       fixedWidth: true,
@@ -420,7 +421,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(17.5, 9.6, 62.0, 83.5),
+                                      Rect.fromLTWH(17.5, 9.6, 62.0, 83.5),
                                       size: Size(100.7, 108.6),
                                       pinTop: true,
                                       pinBottom: true,
@@ -446,7 +447,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(97.3, 61.2, 2.2, 19.0),
+                                      Rect.fromLTWH(97.3, 61.2, 2.2, 19.0),
                                       size: Size(100.7, 108.6),
                                       pinRight: true,
                                       fixedWidth: true,
@@ -466,7 +467,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(20.5, 12.6, 53.9, 38.0),
+                                      Rect.fromLTWH(20.5, 12.6, 53.9, 38.0),
                                       size: Size(100.7, 108.6),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -479,7 +480,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 92.9, 100.7, 15.7),
+                                      Rect.fromLTWH(0.0, 92.9, 100.7, 15.7),
                                       size: Size(100.7, 108.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -493,7 +494,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(77.7, 12.6, 14.5, 38.0),
+                                      Rect.fromLTWH(77.7, 12.6, 14.5, 38.0),
                                       size: Size(100.7, 108.6),
                                       pinRight: true,
                                       pinTop: true,
@@ -507,7 +508,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(34.5, 10.7, 1.9, 41.8),
+                                      Rect.fromLTWH(34.5, 10.7, 1.9, 41.8),
                                       size: Size(100.7, 108.6),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -521,7 +522,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 92.9, 100.7, 8.8),
+                                      Rect.fromLTWH(0.0, 92.9, 100.7, 8.8),
                                       size: Size(100.7, 108.6),
                                       pinLeft: true,
                                       pinRight: true,
@@ -538,7 +539,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(24.3, 54.3, 14.8, 2.3),
+                                      Rect.fromLTWH(24.3, 54.3, 14.8, 2.3),
                                       size: Size(100.7, 108.6),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -550,7 +551,7 @@ class FoodWaste extends StatelessWidget {
                                               topLeft: Radius.circular(1.17),
                                               topRight: Radius.circular(1.17),
                                               bottomRight:
-                                                  Radius.circular(1.17),
+                                              Radius.circular(1.17),
                                               bottomLeft: Radius.circular(1.17),
                                             ),
                                             color: const Color(0xff1a1a1a),
@@ -560,7 +561,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(46.0, 12.6, 20.5, 38.0),
+                                      Rect.fromLTWH(46.0, 12.6, 20.5, 38.0),
                                       size: Size(100.7, 108.6),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -573,7 +574,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(39.5, 12.6, 14.4, 38.0),
+                                      Rect.fromLTWH(39.5, 12.6, 14.4, 38.0),
                                       size: Size(100.7, 108.6),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -598,7 +599,7 @@ class FoodWaste extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(65.0, 0.0, 58.5, 61.5),
+                                      Rect.fromLTWH(65.0, 0.0, 58.5, 61.5),
                                       size: Size(256.7, 61.5),
                                       pinTop: true,
                                       pinBottom: true,
@@ -654,7 +655,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_iltycu,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -669,10 +670,10 @@ class FoodWaste extends StatelessWidget {
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                       borderRadius:
-                                                          BorderRadius.all(
-                                                              Radius.elliptical(
-                                                                  9999.0,
-                                                                  9999.0)),
+                                                      BorderRadius.all(
+                                                          Radius.elliptical(
+                                                              9999.0,
+                                                              9999.0)),
                                                       color: const Color(
                                                           0xffffffff),
                                                     ),
@@ -687,7 +688,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_xslz1c,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -700,7 +701,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_9ysr86,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -715,7 +716,7 @@ class FoodWaste extends StatelessWidget {
                                                     child: SvgPicture.string(
                                                       _svg_hlj10w,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -728,7 +729,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 58.5, 61.5),
+                                      Rect.fromLTWH(0.0, 0.0, 58.5, 61.5),
                                       size: Size(256.7, 61.5),
                                       pinLeft: true,
                                       pinTop: true,
@@ -757,7 +758,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_da7ugq,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -772,7 +773,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_jk9fxb,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -800,7 +801,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_6t30w,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -815,10 +816,10 @@ class FoodWaste extends StatelessWidget {
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                       borderRadius:
-                                                          BorderRadius.all(
-                                                              Radius.elliptical(
-                                                                  9999.0,
-                                                                  9999.0)),
+                                                      BorderRadius.all(
+                                                          Radius.elliptical(
+                                                              9999.0,
+                                                              9999.0)),
                                                       color: const Color(
                                                           0xffffffff),
                                                     ),
@@ -833,7 +834,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_kdo3t8,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -846,7 +847,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_2977cx,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -861,7 +862,7 @@ class FoodWaste extends StatelessWidget {
                                                     child: SvgPicture.string(
                                                       _svg_wl8ksi,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -874,7 +875,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(198.2, 0.0, 58.5, 61.5),
+                                      Rect.fromLTWH(198.2, 0.0, 58.5, 61.5),
                                       size: Size(256.7, 61.5),
                                       pinRight: true,
                                       pinTop: true,
@@ -917,7 +918,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_m338na,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -932,10 +933,10 @@ class FoodWaste extends StatelessWidget {
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                       borderRadius:
-                                                          BorderRadius.all(
-                                                              Radius.elliptical(
-                                                                  9999.0,
-                                                                  9999.0)),
+                                                      BorderRadius.all(
+                                                          Radius.elliptical(
+                                                              9999.0,
+                                                              9999.0)),
                                                       color: const Color(
                                                           0xffffffff),
                                                     ),
@@ -950,7 +951,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_za1pvl,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -963,7 +964,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_m24oeh,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -978,7 +979,7 @@ class FoodWaste extends StatelessWidget {
                                                     child: SvgPicture.string(
                                                       _svg_o4opv7,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -1028,7 +1029,7 @@ class FoodWaste extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(14.5, 17.7, 17.3, 12.3),
+                                      Rect.fromLTWH(14.5, 17.7, 17.3, 12.3),
                                       size: Size(50.7, 111.0),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -1040,7 +1041,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 13.2, 24.2, 30.4),
+                                      Rect.fromLTWH(0.0, 13.2, 24.2, 30.4),
                                       size: Size(50.7, 111.0),
                                       pinLeft: true,
                                       pinTop: true,
@@ -1069,7 +1070,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_46eb3i,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1083,7 +1084,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_9qalnt,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1106,10 +1107,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_unc700,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -1126,11 +1127,11 @@ class FoodWaste extends StatelessWidget {
                                                   fixedHeight: true,
                                                   child: BlendMask(
                                                     blendMode:
-                                                        BlendMode.multiply,
+                                                    BlendMode.multiply,
                                                     child: SvgPicture.string(
                                                       _svg_wdufpf,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -1157,7 +1158,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_dxwbql,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1172,7 +1173,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_4lp2ww,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1195,10 +1196,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_c08w6i,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -1215,11 +1216,11 @@ class FoodWaste extends StatelessWidget {
                                                   fixedHeight: true,
                                                   child: BlendMask(
                                                     blendMode:
-                                                        BlendMode.multiply,
+                                                    BlendMode.multiply,
                                                     child: SvgPicture.string(
                                                       _svg_w47qmb,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -1247,7 +1248,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_sqwasq,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1262,7 +1263,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_2asq4r,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1284,10 +1285,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_spf4lt,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -1304,11 +1305,11 @@ class FoodWaste extends StatelessWidget {
                                                   fixedWidth: true,
                                                   child: BlendMask(
                                                     blendMode:
-                                                        BlendMode.multiply,
+                                                    BlendMode.multiply,
                                                     child: SvgPicture.string(
                                                       _svg_qt8hb8,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -1337,7 +1338,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_t7uln6,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1352,7 +1353,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_9ev368,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1374,10 +1375,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_v6n2fm,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -1394,11 +1395,11 @@ class FoodWaste extends StatelessWidget {
                                                   fixedHeight: true,
                                                   child: BlendMask(
                                                     blendMode:
-                                                        BlendMode.multiply,
+                                                    BlendMode.multiply,
                                                     child: SvgPicture.string(
                                                       _svg_emg4zv,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -1468,9 +1469,9 @@ class FoodWaste extends StatelessWidget {
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   borderRadius:
-                                                      BorderRadius.only(),
+                                                  BorderRadius.only(),
                                                   color:
-                                                      const Color(0xff3d3d3d),
+                                                  const Color(0xff3d3d3d),
                                                 ),
                                               ),
                                             ),
@@ -1480,7 +1481,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(29.5, 103.9, 3.4, 6.5),
+                                      Rect.fromLTWH(29.5, 103.9, 3.4, 6.5),
                                       size: Size(50.7, 111.0),
                                       pinBottom: true,
                                       fixedWidth: true,
@@ -1493,7 +1494,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(27.1, 45.7, 10.2, 59.8),
+                                      Rect.fromLTWH(27.1, 45.7, 10.2, 59.8),
                                       size: Size(50.7, 111.0),
                                       pinBottom: true,
                                       fixedWidth: true,
@@ -1506,7 +1507,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(46.6, 103.9, 3.4, 6.5),
+                                      Rect.fromLTWH(46.6, 103.9, 3.4, 6.5),
                                       size: Size(50.7, 111.0),
                                       pinRight: true,
                                       pinBottom: true,
@@ -1520,7 +1521,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.1, 34.7, 7.3, 6.2),
+                                      Rect.fromLTWH(12.1, 34.7, 7.3, 6.2),
                                       size: Size(50.7, 111.0),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -1532,7 +1533,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(29.0, 46.5, 21.6, 59.0),
+                                      Rect.fromLTWH(29.0, 46.5, 21.6, 59.0),
                                       size: Size(50.7, 111.0),
                                       pinRight: true,
                                       pinBottom: true,
@@ -1546,7 +1547,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(30.9, 14.1, 3.8, 5.1),
+                                      Rect.fromLTWH(30.9, 14.1, 3.8, 5.1),
                                       size: Size(50.7, 111.0),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -1559,7 +1560,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(31.0, 14.1, 3.5, 2.6),
+                                      Rect.fromLTWH(31.0, 14.1, 3.5, 2.6),
                                       size: Size(50.7, 111.0),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -1572,7 +1573,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(18.0, 16.4, 25.6, 35.5),
+                                      Rect.fromLTWH(18.0, 16.4, 25.6, 35.5),
                                       size: Size(50.7, 111.0),
                                       pinRight: true,
                                       pinTop: true,
@@ -1586,7 +1587,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(18.0, 24.2, 18.5, 10.7),
+                                      Rect.fromLTWH(18.0, 24.2, 18.5, 10.7),
                                       size: Size(50.7, 111.0),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -1598,7 +1599,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(18.0, 35.9, 24.1, 6.2),
+                                      Rect.fromLTWH(18.0, 35.9, 24.1, 6.2),
                                       size: Size(50.7, 111.0),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -1610,7 +1611,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(25.2, 106.3, 8.7, 4.7),
+                                      Rect.fromLTWH(25.2, 106.3, 8.7, 4.7),
                                       size: Size(50.7, 111.0),
                                       pinBottom: true,
                                       fixedWidth: true,
@@ -1665,7 +1666,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_m0s6c7,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1692,7 +1693,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_slrjjs,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1718,7 +1719,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_inhlom,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1730,7 +1731,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(42.1, 106.3, 8.7, 4.7),
+                                      Rect.fromLTWH(42.1, 106.3, 8.7, 4.7),
                                       size: Size(50.7, 111.0),
                                       pinRight: true,
                                       pinBottom: true,
@@ -1786,7 +1787,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_56bn8q,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1813,7 +1814,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_zeqttn,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1839,7 +1840,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_bigus5,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -1851,7 +1852,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(26.9, 0.0, 11.8, 16.1),
+                                      Rect.fromLTWH(26.9, 0.0, 11.8, 16.1),
                                       size: Size(50.7, 111.0),
                                       pinTop: true,
                                       fixedWidth: true,
@@ -2065,10 +2066,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_6m16ai,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -2388,7 +2389,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_5zwsw1,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2415,7 +2416,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_1kmi1t,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2483,7 +2484,7 @@ class FoodWaste extends StatelessWidget {
                                               child: SvgPicture.string(
                                                 _svg_ixti2r,
                                                 allowDrawingOutsideViewBox:
-                                                    true,
+                                                true,
                                                 fit: BoxFit.fill,
                                               ),
                                             ),
@@ -2519,7 +2520,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(86.6, 45.1, 43.3, 66.3),
+                                      Rect.fromLTWH(86.6, 45.1, 43.3, 66.3),
                                       size: Size(231.4, 111.4),
                                       pinBottom: true,
                                       fixedWidth: true,
@@ -2553,18 +2554,18 @@ class FoodWaste extends StatelessWidget {
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   borderRadius:
-                                                      BorderRadius.only(
+                                                  BorderRadius.only(
                                                     topLeft:
-                                                        Radius.circular(2.63),
+                                                    Radius.circular(2.63),
                                                     topRight:
-                                                        Radius.circular(2.63),
+                                                    Radius.circular(2.63),
                                                     bottomRight:
-                                                        Radius.circular(2.63),
+                                                    Radius.circular(2.63),
                                                     bottomLeft:
-                                                        Radius.circular(2.63),
+                                                    Radius.circular(2.63),
                                                   ),
                                                   color:
-                                                      const Color(0xff9369bf),
+                                                  const Color(0xff9369bf),
                                                 ),
                                               ),
                                             ),
@@ -2587,7 +2588,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 67.7, 111.4),
+                                      Rect.fromLTWH(0.0, 0.0, 67.7, 111.4),
                                       size: Size(231.4, 111.4),
                                       pinLeft: true,
                                       pinTop: true,
@@ -2614,7 +2615,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_2e4jo7,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2628,7 +2629,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_6aft8s,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2642,7 +2643,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_y1dgr7,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2656,7 +2657,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_x8dt,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2678,10 +2679,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_gwg8xk,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -2706,10 +2707,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_gtxheb,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -2734,10 +2735,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_ihiluq,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -2753,11 +2754,11 @@ class FoodWaste extends StatelessWidget {
                                                   fixedHeight: true,
                                                   child: BlendMask(
                                                     blendMode:
-                                                        BlendMode.multiply,
+                                                    BlendMode.multiply,
                                                     child: SvgPicture.string(
                                                       _svg_gbs2f3,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -2773,7 +2774,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_h9d0nw,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2788,7 +2789,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_cilzh9,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2803,7 +2804,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_a5ybf,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2826,10 +2827,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_pb4k8y,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -2855,10 +2856,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_3o4jiu,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -2884,10 +2885,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_oh3yf6,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -2904,11 +2905,11 @@ class FoodWaste extends StatelessWidget {
                                                   fixedHeight: true,
                                                   child: BlendMask(
                                                     blendMode:
-                                                        BlendMode.multiply,
+                                                    BlendMode.multiply,
                                                     child: SvgPicture.string(
                                                       _svg_9f86cw,
                                                       allowDrawingOutsideViewBox:
-                                                          true,
+                                                      true,
                                                       fit: BoxFit.fill,
                                                     ),
                                                   ),
@@ -2933,10 +2934,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_2lf50,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -2953,7 +2954,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_chtug7,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2967,7 +2968,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_yshwnh,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2981,7 +2982,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_pef34h,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -2995,7 +2996,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_72knp1,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3009,7 +3010,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_rx7cbv,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3023,7 +3024,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_6halcp,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3037,7 +3038,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_564jyg,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3051,7 +3052,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_pgwmhq,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3065,7 +3066,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_3fo2mk,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3079,7 +3080,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_voqqpi,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3093,7 +3094,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_r671bc,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3107,7 +3108,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_mr40ii,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3120,7 +3121,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_sn0gkt,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3134,7 +3135,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_90fics,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3149,7 +3150,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_3l40so,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3163,7 +3164,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_qov0je,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3176,7 +3177,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_t1nfhx,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3190,7 +3191,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_jip32y,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3204,7 +3205,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_dyqe4g,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3217,7 +3218,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_jz1owg,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3245,7 +3246,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_yq83yb,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3262,19 +3263,19 @@ class FoodWaste extends StatelessWidget {
                                                     child: Container(
                                                       decoration: BoxDecoration(
                                                         borderRadius:
-                                                            BorderRadius.only(
+                                                        BorderRadius.only(
                                                           topLeft:
-                                                              Radius.circular(
-                                                                  2.63),
+                                                          Radius.circular(
+                                                              2.63),
                                                           topRight:
-                                                              Radius.circular(
-                                                                  2.63),
+                                                          Radius.circular(
+                                                              2.63),
                                                           bottomRight:
-                                                              Radius.circular(
-                                                                  2.63),
+                                                          Radius.circular(
+                                                              2.63),
                                                           bottomLeft:
-                                                              Radius.circular(
-                                                                  2.63),
+                                                          Radius.circular(
+                                                              2.63),
                                                         ),
                                                         color: const Color(
                                                             0xff9369bf),
@@ -3292,7 +3293,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_z4jk15,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3329,10 +3330,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_mwv2fj,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -3345,10 +3346,10 @@ class FoodWaste extends StatelessWidget {
                                                         fixedWidth: true,
                                                         fixedHeight: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_kfoagt,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -3377,10 +3378,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinBottom: true,
                                                         fixedHeight: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_j3a0pq,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -3393,10 +3394,10 @@ class FoodWaste extends StatelessWidget {
                                                         fixedWidth: true,
                                                         fixedHeight: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_kxn3f5,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -3414,7 +3415,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_gej5t7,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3428,7 +3429,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_g8stk6,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3468,7 +3469,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_tj0hh9,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3485,19 +3486,19 @@ class FoodWaste extends StatelessWidget {
                                                     child: Container(
                                                       decoration: BoxDecoration(
                                                         borderRadius:
-                                                            BorderRadius.only(
+                                                        BorderRadius.only(
                                                           topLeft:
-                                                              Radius.circular(
-                                                                  2.63),
+                                                          Radius.circular(
+                                                              2.63),
                                                           topRight:
-                                                              Radius.circular(
-                                                                  2.63),
+                                                          Radius.circular(
+                                                              2.63),
                                                           bottomRight:
-                                                              Radius.circular(
-                                                                  2.63),
+                                                          Radius.circular(
+                                                              2.63),
                                                           bottomLeft:
-                                                              Radius.circular(
-                                                                  2.63),
+                                                          Radius.circular(
+                                                              2.63),
                                                         ),
                                                         color: const Color(
                                                             0xff9369bf),
@@ -3515,7 +3516,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_qmwhjp,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3552,10 +3553,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinTop: true,
                                                         pinBottom: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_1swuib,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -3568,10 +3569,10 @@ class FoodWaste extends StatelessWidget {
                                                         fixedWidth: true,
                                                         fixedHeight: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_se421b,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -3600,10 +3601,10 @@ class FoodWaste extends StatelessWidget {
                                                         pinBottom: true,
                                                         fixedHeight: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_y0xlpt,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -3616,10 +3617,10 @@ class FoodWaste extends StatelessWidget {
                                                         fixedWidth: true,
                                                         fixedHeight: true,
                                                         child:
-                                                            SvgPicture.string(
+                                                        SvgPicture.string(
                                                           _svg_yos1e,
                                                           allowDrawingOutsideViewBox:
-                                                              true,
+                                                          true,
                                                           fit: BoxFit.fill,
                                                         ),
                                                       ),
@@ -3637,7 +3638,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_lbiim,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3651,7 +3652,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_vvxmy6,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3663,7 +3664,7 @@ class FoodWaste extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(97.3, 63.4, 21.5, 25.8),
+                                      Rect.fromLTWH(97.3, 63.4, 21.5, 25.8),
                                       size: Size(231.4, 111.4),
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -3690,7 +3691,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_spdelv,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3705,7 +3706,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_m9z7me,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3733,7 +3734,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_j8upnd,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -3748,7 +3749,7 @@ class FoodWaste extends StatelessWidget {
                                                   child: SvgPicture.string(
                                                     _svg_hv6ria,
                                                     allowDrawingOutsideViewBox:
-                                                        true,
+                                                    true,
                                                     fit: BoxFit.fill,
                                                   ),
                                                 ),
@@ -4023,8 +4024,8 @@ class FoodWaste extends StatelessWidget {
           Transform.translate(
             offset: Offset(321.0, 22.0),
             child:
-                // Adobe XD layer: 'Icon ionic-ios-menu' (group)
-                SizedBox(
+            // Adobe XD layer: 'Icon ionic-ios-menu' (group)
+            SizedBox(
               width: 15.0,
               height: 10.0,
               child: Stack(
@@ -4445,3 +4446,4 @@ const String _svg_lsleou =
     '<svg viewBox="4.5 17.9 14.7 1.9" ><path transform="translate(0.0, -5.75)" d="M 18.59482383728027 25.51499938964844 L 5.112818717956543 25.51499938964844 C 4.775768280029297 25.51499938964844 4.5 25.08975028991699 4.5 24.56999969482422 L 4.5 24.56999969482422 C 4.5 24.05025100708008 4.775768280029297 23.625 5.112818717956543 23.625 L 18.59482383728027 23.625 C 18.9318733215332 23.625 19.2076416015625 24.05025100708008 19.2076416015625 24.56999969482422 L 19.2076416015625 24.56999969482422 C 19.2076416015625 25.08975028991699 18.9318733215332 25.51499938964844 18.59482383728027 25.51499938964844 Z" fill="#54ba81" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_wnugql =
     '<svg viewBox="24.0 22.0 6.0 10.5" ><path transform="translate(12.75, 15.81)" d="M 13.05930042266846 11.43977355957031 L 17.03031349182129 7.471888542175293 C 17.32399749755859 7.178202629089355 17.32399749755859 6.703305244445801 17.03031349182129 6.412744998931885 C 16.73662376403809 6.119058132171631 16.2617301940918 6.122181415557861 15.96804141998291 6.412744998931885 L 11.46902370452881 10.90863990783691 C 11.1847095489502 11.19295310974121 11.1784610748291 11.64910507202148 11.44715213775635 11.94279003143311 L 15.96491813659668 16.46992874145508 C 16.11176109313965 16.61677169799805 16.30546951293945 16.68863105773926 16.49605178833008 16.68863105773926 C 16.68663597106934 16.68863105773926 16.88034248352051 16.61677169799805 17.02718734741211 16.46992874145508 C 17.32087326049805 16.17624282836914 17.32087326049805 15.70134544372559 17.02718734741211 15.41078281402588 L 13.05930042266846 11.43977355957031 Z" fill="#54ba81" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+

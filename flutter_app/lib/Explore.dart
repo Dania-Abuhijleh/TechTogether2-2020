@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './Dashboard.dart';
-import 'package:adobe_xd/page_link.dart';
-import './ActivityCategories.dart';
-import './Friends.dart';
 import './Badges.dart';
-import './Explore.dart';
-import './Lyft.dart';
+import 'package:adobe_xd/page_link.dart';
+import './Dashboard.dart';
+import './Redeem.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Redeem extends StatelessWidget {
-  Redeem({
+class Explore extends StatelessWidget {
+  Explore({
     Key key,
   }) : super(key: key);
   @override
@@ -20,15 +17,15 @@ class Redeem extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
-            offset: Offset(25.0, 672.0),
+            offset: Offset(25.3, 696.9),
             child: SizedBox(
-              width: 310.0,
-              height: 66.0,
+              width: 313.0,
+              height: 75.0,
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 310.0, 66.0),
-                    size: Size(310.0, 66.0),
+                    bounds: Rect.fromLTWH(1.7, 0.1, 311.0, 73.0),
+                    size: Size(312.7, 74.6),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -36,21 +33,36 @@ class Redeem extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(6.0),
-                        color: const Color(0xffffffff),
+                        color: const Color(0xff54ba81),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(83.0, 15.0, 19.0, 20.0),
-                    size: Size(310.0, 66.0),
+                    bounds: Rect.fromLTWH(0.0, 0.0, 312.7, 74.6),
+                    size: Size(312.7, 74.6),
+                    pinLeft: true,
+                    pinRight: true,
+                    pinTop: true,
+                    pinBottom: true,
+                    child: SvgPicture.string(
+                      _svg_epk4in,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(187.7, 7.1, 97.0, 20.0),
+                    size: Size(312.7, 74.6),
+                    pinRight: true,
+                    pinTop: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Text(
-                      'HP',
+                      'Wildfire Relief',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 14,
-                        color: const Color(0xff4f5351),
+                        color: const Color(0xffffffff),
                         fontWeight: FontWeight.w600,
                         height: 1.3571428571428572,
                       ),
@@ -58,48 +70,37 @@ class Redeem extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(116.0, 15.0, 48.0, 20.0),
-                    size: Size(310.0, 66.0),
+                    bounds: Rect.fromLTWH(187.7, 27.1, 119.0, 40.0),
+                    size: Size(312.7, 74.6),
+                    pinRight: true,
+                    pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
-                      '10% Off',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        color: const Color(0xff4f5351),
-                        height: 1.3571428571428572,
+                    child: Text.rich(
+                      TextSpan(
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 11,
+                          color: const Color(0xffffffff),
+                          height: 1,
+                        ),
+                        children: [
+                          TextSpan(
+                            text:
+                                'Donate to the wildfire relief fund for up to ',
+                          ),
+                          TextSpan(
+                            text: '+50XP',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          TextSpan(
+                            text: ' ',
+                          ),
+                        ],
                       ),
                       textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(83.0, 34.0, 47.0, 20.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '500 XP',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        color: const Color(0xff4f5351),
-                        height: 1.3571428571428572,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(107.0, 24.0, 2.0, 2.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff4f5351),
-                      ),
                     ),
                   ),
                 ],
@@ -107,23 +108,10 @@ class Redeem extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(46.0, 684.0),
-            child: Container(
-              width: 34.0,
-              height: 34.0,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage(''),
-                  fit: BoxFit.fill,
-                ),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(0.0, 701.0),
+            offset: Offset(0.0, 706.0),
             child: Container(
               width: 360.0,
-              height: 59.0,
+              height: 54.0,
               decoration: BoxDecoration(
                 color: const Color(0xfff5f5f5),
               ),
@@ -146,7 +134,7 @@ class Redeem extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Dashboard(),
+                  pageBuilder: () => Badges(),
                 ),
               ],
               child: SvgPicture.string(
@@ -288,27 +276,17 @@ class Redeem extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(152.8, 739.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => ActivityCategories(),
+            child: SizedBox(
+              width: 50.0,
+              child: Text(
+                'Add a task',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 8,
+                  color: const Color(0xff54ba81),
+                  fontWeight: FontWeight.w300,
                 ),
-              ],
-              child: SizedBox(
-                width: 50.0,
-                child: Text(
-                  'Add a task',
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 8,
-                    color: const Color(0xff54ba81),
-                    fontWeight: FontWeight.w300,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
+                textAlign: TextAlign.center,
               ),
             ),
           ),
@@ -320,7 +298,7 @@ class Redeem extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Friends(),
+                  pageBuilder: () => Dashboard(),
                 ),
               ],
               child: SizedBox(
@@ -522,95 +500,116 @@ class Redeem extends StatelessWidget {
             offset: Offset(137.0, 17.0),
             child:
                 // Adobe XD layer: 'Logo_White' (group)
-                PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => Dashboard(),
-                ),
-              ],
-              child: SizedBox(
-                width: 81.0,
-                height: 20.0,
-                child: Stack(
-                  children: <Widget>[
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(26.0, 6.0, 55.0, 11.0),
-                      size: Size(81.0, 20.0),
-                      pinRight: true,
-                      fixedWidth: true,
-                      fixedHeight: true,
-                      child: Text.rich(
-                        TextSpan(
-                          style: TextStyle(
-                            fontFamily: 'Gilroy',
-                            fontSize: 11,
-                            color: const Color(0xff4f5351),
-                            height: 2.5454545454545454,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: 'carbon',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w800,
-                              ),
-                            ),
-                            TextSpan(
-                              text: 'print',
-                              style: TextStyle(
-                                color: const Color(0xff54ba81),
-                                fontWeight: FontWeight.w800,
-                              ),
-                            ),
-                          ],
+                SizedBox(
+              width: 81.0,
+              height: 20.0,
+              child: Stack(
+                children: <Widget>[
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(26.0, 6.0, 55.0, 11.0),
+                    size: Size(81.0, 20.0),
+                    pinRight: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: Text.rich(
+                      TextSpan(
+                        style: TextStyle(
+                          fontFamily: 'Gilroy',
+                          fontSize: 11,
+                          color: const Color(0xff4f5351),
+                          height: 2.5454545454545454,
                         ),
-                        textAlign: TextAlign.left,
+                        children: [
+                          TextSpan(
+                            text: 'carbon',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          TextSpan(
+                            text: 'print',
+                            style: TextStyle(
+                              color: const Color(0xff54ba81),
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ],
                       ),
+                      textAlign: TextAlign.left,
                     ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
-                      size: Size(81.0, 20.0),
-                      pinLeft: true,
-                      pinTop: true,
-                      pinBottom: true,
-                      fixedWidth: true,
-                      child: Stack(
-                        children: <Widget>[
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
-                            size: Size(20.0, 20.0),
-                            pinLeft: true,
-                            pinRight: true,
-                            pinTop: true,
-                            pinBottom: true,
-                            child:
-                                // Adobe XD layer: 'Logo_White' (group)
-                                Stack(
-                              children: <Widget>[
-                                Pinned.fromSize(
-                                  bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
-                                  size: Size(20.0, 20.0),
-                                  pinLeft: true,
-                                  pinRight: true,
-                                  pinTop: true,
-                                  pinBottom: true,
-                                  child:
-                                      // Adobe XD layer: 'Ellipse 2' (shape)
-                                      Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.all(
-                                          Radius.elliptical(9999.0, 9999.0)),
-                                      color: const Color(0xff54ba81),
-                                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
+                    size: Size(81.0, 20.0),
+                    pinLeft: true,
+                    pinTop: true,
+                    pinBottom: true,
+                    fixedWidth: true,
+                    child: Stack(
+                      children: <Widget>[
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
+                          size: Size(20.0, 20.0),
+                          pinLeft: true,
+                          pinRight: true,
+                          pinTop: true,
+                          pinBottom: true,
+                          child:
+                              // Adobe XD layer: 'Logo_White' (group)
+                              Stack(
+                            children: <Widget>[
+                              Pinned.fromSize(
+                                bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
+                                size: Size(20.0, 20.0),
+                                pinLeft: true,
+                                pinRight: true,
+                                pinTop: true,
+                                pinBottom: true,
+                                child:
+                                    // Adobe XD layer: 'Ellipse 2' (shape)
+                                    Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(
+                                        Radius.elliptical(9999.0, 9999.0)),
+                                    color: const Color(0xff54ba81),
                                   ),
                                 ),
-                                Pinned.fromSize(
-                                  bounds: Rect.fromLTWH(8.2, 7.3, 5.9, 8.0),
-                                  size: Size(20.0, 20.0),
-                                  fixedWidth: true,
-                                  fixedHeight: true,
+                              ),
+                              Pinned.fromSize(
+                                bounds: Rect.fromLTWH(8.2, 7.3, 5.9, 8.0),
+                                size: Size(20.0, 20.0),
+                                fixedWidth: true,
+                                fixedHeight: true,
+                                child:
+                                    // Adobe XD layer: 'human-feet-shape' (group)
+                                    Stack(
+                                  children: <Widget>[
+                                    Pinned.fromSize(
+                                      bounds: Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
+                                      size: Size(5.9, 8.0),
+                                      pinLeft: true,
+                                      pinRight: true,
+                                      pinTop: true,
+                                      pinBottom: true,
+                                      child:
+                                          // Adobe XD layer: 'Path 429' (shape)
+                                          SvgPicture.string(
+                                        _svg_j093nr,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Pinned.fromSize(
+                                bounds: Rect.fromLTWH(5.7, 3.3, 5.9, 8.0),
+                                size: Size(20.0, 20.0),
+                                pinTop: true,
+                                fixedWidth: true,
+                                fixedHeight: true,
+                                child: Transform.rotate(
+                                  angle: 0.9774,
                                   child:
                                       // Adobe XD layer: 'human-feet-shape' (group)
                                       Stack(
@@ -626,7 +625,7 @@ class Redeem extends StatelessWidget {
                                         child:
                                             // Adobe XD layer: 'Path 429' (shape)
                                             SvgPicture.string(
-                                          _svg_j093nr,
+                                          _svg_oent07,
                                           allowDrawingOutsideViewBox: true,
                                           fit: BoxFit.fill,
                                         ),
@@ -634,63 +633,31 @@ class Redeem extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                Pinned.fromSize(
-                                  bounds: Rect.fromLTWH(5.7, 3.3, 5.9, 8.0),
-                                  size: Size(20.0, 20.0),
-                                  pinTop: true,
-                                  fixedWidth: true,
-                                  fixedHeight: true,
-                                  child: Transform.rotate(
-                                    angle: 0.9774,
-                                    child:
-                                        // Adobe XD layer: 'human-feet-shape' (group)
-                                        Stack(
-                                      children: <Widget>[
-                                        Pinned.fromSize(
-                                          bounds:
-                                              Rect.fromLTWH(0.0, 0.0, 5.9, 8.0),
-                                          size: Size(5.9, 8.0),
-                                          pinLeft: true,
-                                          pinRight: true,
-                                          pinTop: true,
-                                          pinBottom: true,
-                                          child:
-                                              // Adobe XD layer: 'Path 429' (shape)
-                                              SvgPicture.string(
-                                            _svg_oent07,
-                                            allowDrawingOutsideViewBox: true,
-                                            fit: BoxFit.fill,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
-                            size: Size(20.0, 20.0),
-                            pinLeft: true,
-                            pinRight: true,
-                            pinTop: true,
-                            pinBottom: true,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.all(
-                                    Radius.elliptical(9999.0, 9999.0)),
-                                color: const Color(0xffffffff),
-                                border: Border.all(
-                                    width: 1.0, color: const Color(0xff707070)),
                               ),
+                            ],
+                          ),
+                        ),
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(0.0, 0.0, 20.0, 20.0),
+                          size: Size(20.0, 20.0),
+                          pinLeft: true,
+                          pinRight: true,
+                          pinTop: true,
+                          pinBottom: true,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(
+                                  Radius.elliptical(9999.0, 9999.0)),
+                              color: const Color(0xffffffff),
+                              border: Border.all(
+                                  width: 1.0, color: const Color(0xff707070)),
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -707,16 +674,25 @@ class Redeem extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(28.0, 195.0),
-            child: Text(
-              'Redeem Points',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xff54ba81),
-                fontWeight: FontWeight.w700,
-                height: 1.3571428571428572,
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Redeem(),
+                ),
+              ],
+              child: Text(
+                'Redeem Points',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 14,
+                  color: const Color(0xff54ba81),
+                  height: 1.3571428571428572,
+                ),
+                textAlign: TextAlign.left,
               ),
-              textAlign: TextAlign.left,
             ),
           ),
           Transform.translate(
@@ -802,157 +778,113 @@ class Redeem extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(28.5, 225.5),
+            offset: Offset(263.5, 226.5),
             child: SvgPicture.string(
-              _svg_kqi4v0,
+              _svg_9rsxv6,
               allowDrawingOutsideViewBox: true,
             ),
           ),
           Transform.translate(
             offset: Offset(263.0, 195.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => Explore(),
-                ),
-              ],
-              child: Text(
-                'Explore',
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 14,
-                  color: const Color(0xff54ba81),
-                  height: 1.3571428571428572,
+            child: Text(
+              'Explore',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 14,
+                color: const Color(0xff54ba81),
+                fontWeight: FontWeight.w700,
+                height: 1.3571428571428572,
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(21.0, 246.0),
+            child: Container(
+              width: 311.0,
+              height: 73.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(6.0),
+                color: const Color(0xff54ba81),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(21.0, 245.9),
+            child: SvgPicture.string(
+              _svg_ouelwo,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(38.0, 259.0),
+            child: Text(
+              'Vegan Recipes',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 14,
+                color: const Color(0xffffffff),
+                fontWeight: FontWeight.w600,
+                height: 1.3571428571428572,
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(38.0, 283.0),
+            child: SizedBox(
+              width: 107.0,
+              height: 27.0,
+              child: Text.rich(
+                TextSpan(
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 11,
+                    color: const Color(0xffffffff),
+                    height: 1,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'Make and share a recipe for ',
+                    ),
+                    TextSpan(
+                      text: '+3XP',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
                 ),
                 textAlign: TextAlign.left,
               ),
             ),
           ),
           Transform.translate(
-            offset: Offset(25.0, 242.0),
-            child: SizedBox(
-              width: 310.0,
-              height: 66.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 310.0, 66.0),
-                    size: Size(310.0, 66.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(6.0),
-                        color: const Color(0xffffffff),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(83.0, 15.0, 74.0, 20.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      'Patagonia',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        color: const Color(0xff4f5351),
-                        fontWeight: FontWeight.w600,
-                        height: 1.3571428571428572,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(173.0, 16.0, 48.0, 20.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '10% Off',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        color: const Color(0xff4f5351),
-                        height: 1.3571428571428572,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(83.0, 34.0, 47.0, 20.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '500 XP',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        color: const Color(0xff4f5351),
-                        height: 1.3571428571428572,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(164.0, 25.0, 2.0, 2.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff4f5351),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(18.0, 9.0, 46.0, 48.0),
-                    size: Size(310.0, 66.0),
-                    pinLeft: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    fixedWidth: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: const AssetImage(''),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(25.0, 328.0),
+            offset: Offset(25.0, 335.0),
             child: Container(
-              width: 310.0,
-              height: 66.0,
+              width: 311.0,
+              height: 73.0,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6.0),
-                color: const Color(0xffffffff),
+                color: const Color(0xffaa8df7),
               ),
             ),
           ),
           Transform.translate(
-            offset: Offset(108.0, 343.0),
+            offset: Offset(23.3, 334.9),
+            child: SvgPicture.string(
+              _svg_v2b5er,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(211.0, 342.0),
             child: Text(
-              'Dunkin Donuts',
+              'Wildfire Relief',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 14,
-                color: const Color(0xff4f5351),
+                color: const Color(0xffffffff),
                 fontWeight: FontWeight.w600,
                 height: 1.3571428571428572,
               ),
@@ -960,345 +892,217 @@ class Redeem extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(228.0, 344.0),
-            child: Text(
-              'Free Coffee',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xff4f5351),
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(108.0, 362.0),
-            child: Text(
-              '230 XP',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xff4f5351),
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(219.0, 353.0),
-            child: Container(
-              width: 2.0,
-              height: 2.0,
-              decoration: BoxDecoration(
-                borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                color: const Color(0xff4f5351),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(25.0, 414.0),
-            child: Container(
-              width: 310.0,
-              height: 66.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                color: const Color(0xffffffff),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(108.0, 429.0),
-            child: Text(
-              'Spotify',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xff4f5351),
-                fontWeight: FontWeight.w600,
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(174.0, 430.0),
-            child: Text(
-              'Free Month',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xff4f5351),
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(108.0, 448.0),
-            child: Text(
-              '500 XP',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: const Color(0xff4f5351),
-                height: 1.3571428571428572,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(165.0, 439.0),
-            child: Container(
-              width: 2.0,
-              height: 2.0,
-              decoration: BoxDecoration(
-                borderRadius:
-                    BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                color: const Color(0xff4f5351),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(25.0, 500.0),
+            offset: Offset(211.0, 362.0),
             child: SizedBox(
-              width: 310.0,
-              height: 66.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 310.0, 66.0),
-                    size: Size(310.0, 66.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(6.0),
-                        color: const Color(0xffffffff),
-                      ),
-                    ),
+              width: 119.0,
+              height: 40.0,
+              child: Text.rich(
+                TextSpan(
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 11,
+                    color: const Color(0xffffffff),
+                    height: 1,
                   ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(83.0, 15.0, 70.0, 20.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      'DoorDash',
+                  children: [
+                    TextSpan(
+                      text: 'Donate to the wildfire relief fund for up to ',
+                    ),
+                    TextSpan(
+                      text: '+50XP',
                       style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        color: const Color(0xff4f5351),
-                        fontWeight: FontWeight.w600,
-                        height: 1.3571428571428572,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(169.0, 15.0, 48.0, 20.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '15% Off',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        color: const Color(0xff4f5351),
-                        height: 1.3571428571428572,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(83.0, 34.0, 46.0, 20.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '250 XP',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        color: const Color(0xff4f5351),
-                        height: 1.3571428571428572,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(160.0, 24.0, 2.0, 2.0),
-                    size: Size(310.0, 66.0),
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff4f5351),
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(25.0, 586.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => Lyft(),
+                    TextSpan(
+                      text: ' ',
+                    ),
+                  ],
                 ),
-              ],
-              child: SizedBox(
-                width: 310.0,
-                height: 66.0,
-                child: Stack(
-                  children: <Widget>[
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(0.0, 0.0, 310.0, 66.0),
-                      size: Size(310.0, 66.0),
-                      pinLeft: true,
-                      pinRight: true,
-                      pinTop: true,
-                      pinBottom: true,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(6.0),
-                          color: const Color(0xffffffff),
-                        ),
-                      ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(23.0, 427.0),
+            child: Container(
+              width: 311.0,
+              height: 73.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(6.0),
+                color: const Color(0xfff8bf45),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(23.0, 426.9),
+            child: SvgPicture.string(
+              _svg_pppj2s,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(40.0, 436.0),
+            child: Text(
+              'Thrifting',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 14,
+                color: const Color(0xffffffff),
+                fontWeight: FontWeight.w600,
+                height: 1.3571428571428572,
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(40.0, 456.0),
+            child: SizedBox(
+              width: 107.0,
+              height: 41.0,
+              child: Text.rich(
+                TextSpan(
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 11,
+                    color: const Color(0xffffffff),
+                    height: 1,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'Make sustainable shopping choices for up to ',
                     ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(83.0, 15.0, 25.0, 20.0),
-                      size: Size(310.0, 66.0),
-                      fixedWidth: true,
-                      fixedHeight: true,
-                      child: Text(
-                        'Lyft',
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: const Color(0xff4f5351),
-                          fontWeight: FontWeight.w600,
-                          height: 1.3571428571428572,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(124.0, 15.0, 48.0, 20.0),
-                      size: Size(310.0, 66.0),
-                      fixedWidth: true,
-                      fixedHeight: true,
-                      child: Text(
-                        '10% Off',
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: const Color(0xff4f5351),
-                          height: 1.3571428571428572,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(83.0, 34.0, 46.0, 20.0),
-                      size: Size(310.0, 66.0),
-                      fixedWidth: true,
-                      fixedHeight: true,
-                      child: Text(
-                        '250 XP',
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: const Color(0xff4f5351),
-                          height: 1.3571428571428572,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(115.0, 24.0, 2.0, 2.0),
-                      size: Size(310.0, 66.0),
-                      fixedWidth: true,
-                      fixedHeight: true,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                              Radius.elliptical(9999.0, 9999.0)),
-                          color: const Color(0xff4f5351),
-                        ),
-                      ),
-                    ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(12.0, 5.0, 58.0, 58.0),
-                      size: Size(310.0, 66.0),
-                      pinLeft: true,
-                      pinTop: true,
-                      pinBottom: true,
-                      fixedWidth: true,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: const AssetImage(''),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
+                    TextSpan(
+                      text: '+50 XP',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
                   ],
                 ),
+                textAlign: TextAlign.left,
               ),
             ),
           ),
           Transform.translate(
-            offset: Offset(46.0, 334.0),
+            offset: Offset(27.0, 516.0),
             child: Container(
-              width: 40.0,
-              height: 55.0,
+              width: 311.0,
+              height: 73.0,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage(''),
-                  fit: BoxFit.fill,
-                ),
+                borderRadius: BorderRadius.circular(6.0),
+                color: const Color(0xffee66a2),
               ),
             ),
           ),
           Transform.translate(
-            offset: Offset(50.1, 430.1),
-            child: Transform.rotate(
-              angle: -0.0175,
-              child: Container(
-                width: 36.0,
-                height: 36.0,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: const AssetImage(''),
-                    fit: BoxFit.fill,
+            offset: Offset(25.3, 515.9),
+            child: SvgPicture.string(
+              _svg_rbwlzx,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(213.0, 523.0),
+            child: Text(
+              'Gardening',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 14,
+                color: const Color(0xffffffff),
+                fontWeight: FontWeight.w600,
+                height: 1.3571428571428572,
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(213.0, 543.0),
+            child: SizedBox(
+              width: 111.0,
+              height: 40.0,
+              child: Text.rich(
+                TextSpan(
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 11,
+                    color: const Color(0xffffffff),
+                    height: 1,
                   ),
+                  children: [
+                    TextSpan(
+                      text: 'Start your own home garden for up to ',
+                    ),
+                    TextSpan(
+                      text: '+10 XP',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
                 ),
+                textAlign: TextAlign.left,
               ),
             ),
           ),
           Transform.translate(
-            offset: Offset(45.0, 522.0),
+            offset: Offset(23.0, 608.0),
             child: Container(
-              width: 47.0,
-              height: 23.0,
+              width: 311.0,
+              height: 73.0,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage(''),
-                  fit: BoxFit.fill,
+                borderRadius: BorderRadius.circular(6.0),
+                color: const Color(0xff40aef8),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(28.5, 607.9),
+            child: SvgPicture.string(
+              _svg_kxqta0,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(40.0, 621.0),
+            child: Text(
+              'Solar Panels',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 14,
+                color: const Color(0xffffffff),
+                fontWeight: FontWeight.w600,
+                height: 1.3571428571428572,
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(40.0, 645.0),
+            child: SizedBox(
+              width: 107.0,
+              height: 27.0,
+              child: Text.rich(
+                TextSpan(
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 11,
+                    color: const Color(0xffffffff),
+                    height: 1,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'Install solar panels for up to ',
+                    ),
+                    TextSpan(
+                      text: '+100 XP',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
                 ),
+                textAlign: TextAlign.left,
               ),
             ),
           ),
@@ -1308,6 +1112,8 @@ class Redeem extends StatelessWidget {
   }
 }
 
+const String _svg_epk4in =
+    '<svg viewBox="25.3 696.9 312.7 74.6" ><defs><pattern id="image" patternUnits="userSpaceOnUse" width="800.0" height="800.0"><image xlink:href="null" x="0" y="0" width="800.0" height="800.0" /></pattern></defs><path transform="translate(27.0, 697.0)" d="M 4.281494140625 -8.248034255586845e-09 L 4.281494140625 -8.248034255586845e-09 C 0.9677734375 -8.248034255586845e-09 -1.718505859375 2.686290979385376 -1.718505859375 5.999999046325684 L -1.718505859375 66.99999237060547 C -1.718505859375 70.31369781494141 0.9677734375 72.99999237060547 4.281494140625 72.99999237060547 L 303.281494140625 72.99999237060547 C 306.59521484375 72.99999237060547 311 76.31369781494141 311 72.99999237060547 L 181.625 72.99999237060547 C 181.625 71.32325744628906 180.8510284423828 18.12835121154785 136.174072265625 -8.248034255586845e-09 C 130.052490234375 -0.156585693359375 127.730224609375 -0.0445861853659153 122.920654296875 -8.248034255586845e-09 C 111.68408203125 -0.0005493246135301888 99.160888671875 -0.000183113690582104 85.65234375 -8.248034255586845e-09 C 82.38925170898438 0.006943571381270885 79.01187133789062 -0.02741670981049538 75.41455078125 -8.248034255586845e-09 C 68.97006225585938 0.04913406074047089 62.365478515625 -0.074005126953125 55.706298828125 -8.248034255586845e-09 C 50.26904296875 -0.1270948052406311 44.886962890625 -0.072052001953125 39.443603515625 -8.248034255586845e-09 C 37.3502197265625 0.02265300415456295 35.19580078125 -0.0266723670065403 32.8984375 -8.248034255586845e-09 C 30.611328125 0.009155264124274254 28.54473876953125 0.00846542976796627 26.11572265625 -8.248034255586845e-09 C 22.67767333984375 -0.01042769104242325 19.027587890625 -0.02310181222856045 15.96484375 -8.248034255586845e-09 C 8.856201171875 -0.064910888671875 4.645843505859375 -8.248034255586845e-09 4.281494140625 -8.248034255586845e-09 Z" fill="url(#image)" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_wnugql =
     '<svg viewBox="24.0 22.0 6.0 10.5" ><path transform="translate(12.75, 15.81)" d="M 13.05930042266846 11.43977355957031 L 17.03031349182129 7.471888542175293 C 17.32399749755859 7.178202629089355 17.32399749755859 6.703305244445801 17.03031349182129 6.412744998931885 C 16.73662376403809 6.119058132171631 16.2617301940918 6.122181415557861 15.96804141998291 6.412744998931885 L 11.46902370452881 10.90863990783691 C 11.1847095489502 11.19295310974121 11.1784610748291 11.64910507202148 11.44715213775635 11.94279003143311 L 15.96491813659668 16.46992874145508 C 16.11176109313965 16.61677169799805 16.30546951293945 16.68863105773926 16.49605178833008 16.68863105773926 C 16.68663597106934 16.68863105773926 16.88034248352051 16.61677169799805 17.02718734741211 16.46992874145508 C 17.32087326049805 16.17624282836914 17.32087326049805 15.70134544372559 17.02718734741211 15.41078281402588 L 13.05930042266846 11.43977355957031 Z" fill="#54ba81" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_kf0avj =
@@ -1342,5 +1148,15 @@ const String _svg_oent07 =
     '<svg viewBox="0.0 0.0 5.9 8.0" ><path transform="translate(-1.04, 0.0)" d="M 2.101500749588013 4.691001892089844 C 2.145300626754761 4.759147644042969 2.195530414581299 4.822939395904541 2.251500844955444 4.881502151489258 C 2.764750957489014 5.63750171661377 4.439001560211182 6.967502117156982 4.722752094268799 7.414252281188965 C 4.944785594940186 7.796272754669189 5.35746955871582 8.026813507080078 5.799184799194336 8.01558780670166 C 6.240900993347168 8.004363059997559 6.641342639923096 7.753158092498779 6.843685626983643 7.360352993011475 C 7.046028137207031 6.96754789352417 7.018067359924316 6.495662689208984 6.770752429962158 6.129501819610596 C 6.286502361297607 5.364501476287842 5.005002021789551 5.316001415252686 4.755002021789551 4.764751434326172 L 4.755002021789551 4.764751434326172 C 4.755002021789551 4.714751243591309 4.723502159118652 4.659750938415527 4.753252029418945 4.616751194000244 C 5.178396224975586 3.917779207229614 5.2086181640625 3.047789335250854 4.833002090454102 2.321000337600708 C 4.40300178527832 1.642750382423401 3.600001335144043 2.01900053024292 2.788501024246216 2.533750772476196 C 1.977000713348389 3.048501014709473 1.671250581741333 4.012751579284668 2.101500749588013 4.691001892089844 Z M 3.996501445770264 1.550000548362732 C 3.606186866760254 1.765708565711975 3.114945888519287 1.626040101051331 2.896501064300537 1.237250566482544 C 2.637433767318726 0.8735772967338562 2.720262765884399 0.3690123558044434 3.082001209259033 0.1072501316666603 C 3.472676992416382 -0.1074180379509926 3.963355541229248 0.03253687545657158 4.18200159072876 0.421000212430954 C 4.441110610961914 0.7843233346939087 4.358241081237793 1.288685917854309 3.996501445770264 1.550000548362732 Z M 2.848500967025757 1.394500494003296 C 2.982098817825317 1.57350766658783 2.947374820709229 1.82659125328064 2.770500898361206 1.963000655174255 C 2.571739196777344 2.064933776855469 2.327959537506104 1.988314270973206 2.2232506275177 1.791000604629517 C 2.089567899703979 1.612441062927246 2.123722076416016 1.359677076339722 2.300000667572021 1.223000526428223 C 2.499000549316406 1.120192646980286 2.743674278259277 1.19680643081665 2.848500728607178 1.394750475883484 Z M 2.220500707626343 2.015000820159912 C 2.334727048873901 2.171318769454956 2.301959276199341 2.390437364578247 2.147000789642334 2.506500959396362 C 1.976097822189331 2.596933603286743 1.764246463775635 2.532932281494141 1.672000765800476 2.363000869750977 C 1.557692050933838 2.206892013549805 1.590237975120544 1.98787534236908 1.745000600814819 1.871750712394714 C 1.91595733165741 1.780942797660828 2.128154993057251 1.844870209693909 2.220500707626343 2.015000820159912 Z M 1.298250436782837 3.040001153945923 C 1.177375078201294 2.891663789749146 1.195489883422852 2.674285411834717 1.339250564575195 2.548001050949097 C 1.514928460121155 2.47197961807251 1.719279408454895 2.548376560211182 1.802000641822815 2.721000909805298 C 1.922905564308167 2.869420051574707 1.90479302406311 3.086879253387451 1.761000514030457 3.213251113891602 C 1.585123777389526 3.2891685962677 1.380698680877686 3.21241283416748 1.298250436782837 3.039501190185547 Z M 1.125000357627869 3.30000114440918 C 1.255149722099304 3.243643522262573 1.406565546989441 3.300300359725952 1.467750430107117 3.428251266479492 C 1.557517051696777 3.538057088851929 1.544374346733093 3.699192762374878 1.438000440597534 3.793000936508179 C 1.307781457901001 3.849184513092041 1.15643846988678 3.792444944381714 1.095250368118286 3.664501190185547 C 1.005646586418152 3.55473518371582 1.01878297328949 3.393784523010254 1.125000357627869 3.300000905990601 Z" fill="#ffffff" stroke="none" stroke-width="0.25000008940696716" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_y2irr8 =
     '<svg viewBox="28.5 160.5 251.0 1.0" ><path transform="translate(30.5, 160.5)" d="M 0 0 L 249 0" fill="none" fill-opacity="0.3" stroke="#54ba81" stroke-width="5" stroke-opacity="0.3" stroke-miterlimit="4" stroke-linecap="round" /><path transform="translate(28.5, 160.5)" d="M 0 0 L 204 0" fill="none" fill-opacity="1.0" stroke="#54ba81" stroke-width="5" stroke-opacity="1.0" stroke-miterlimit="4" stroke-linecap="round" /></svg>';
-const String _svg_kqi4v0 =
-    '<svg viewBox="28.5 225.5 107.0 1.0" ><path transform="translate(28.5, 225.5)" d="M 0 0 L 107 0" fill="none" stroke="#54ba81" stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" /></svg>';
+const String _svg_9rsxv6 =
+    '<svg viewBox="263.5 226.5 54.0 1.0" ><path transform="translate(263.5, 226.5)" d="M 0 0 L 54 0" fill="none" stroke="#54ba81" stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" /></svg>';
+const String _svg_ouelwo =
+    '<svg viewBox="21.0 245.9 311.0 74.4" ><defs><pattern id="image" patternUnits="userSpaceOnUse" width="967.0" height="725.0"><image xlink:href="null" x="0" y="0" width="967.0" height="725.0" /></pattern></defs><path transform="translate(22.72, 246.0)" d="M 303.3144836425781 -0.0001897752517834306 L 303.3144836425781 -0.0001897752517834306 C 306.6099853515625 -0.0001897752517834306 309.2815246582031 2.679776191711426 309.2815246582031 5.985682487487793 L 309.2815246582031 66.84205627441406 C 309.2815246582031 70.14795684814453 306.6099853515625 72.82791900634766 303.3144836425781 72.82791900634766 L 5.957583904266357 72.82791900634766 C 2.662085294723511 72.82791900634766 -1.718505859375 76.13382720947266 -1.718505859375 72.82791900634766 L 126.9455261230469 72.82791900634766 C 126.9455261230469 71.15513610839844 127.7152481079102 18.08547782897949 172.1466827392578 -0.0001897752517834306 C 178.2346343994141 -0.1564067751169205 180.5441284179688 -0.04467097297310829 185.3272705078125 -0.0001897752517834306 C 196.5020904541016 -0.0007377982838079333 208.9564666748047 -0.0003724496345967054 222.3907775878906 -0.0001897752517834306 C 225.6359405517578 0.006737455725669861 228.9947662353516 -0.02754192613065243 232.5723114013672 -0.0001897752517834306 C 238.9813842773438 0.0488286055624485 245.5496826171875 -0.07402064651250839 252.1722564697266 -0.0001897752517834306 C 257.5796508789062 -0.1269853115081787 262.9321594238281 -0.07207211852073669 268.3456115722656 -0.0001897752517834306 C 270.427490234375 0.02240989916026592 272.570068359375 -0.02679933421313763 274.8547973632812 -0.0001897752517834306 C 277.1293334960938 0.008943940512835979 279.1845703125 0.008255730383098125 281.6002502441406 -0.0001897752517834306 C 285.0194091796875 -0.01059290580451488 288.6494140625 -0.02323718555271626 291.6953430175781 -0.0001897752517834306 C 298.7649230957031 -0.06494782119989395 302.9521484375 -0.0001897752517834306 303.3144836425781 -0.0001897752517834306 Z" fill="url(#image)" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_v2b5er =
+    '<svg viewBox="23.3 334.9 312.7 74.6" ><defs><pattern id="image" patternUnits="userSpaceOnUse" width="800.0" height="800.0"><image xlink:href="null" x="0" y="0" width="800.0" height="800.0" /></pattern></defs><path transform="translate(25.0, 335.0)" d="M 4.281494140625 -8.248034255586845e-09 L 4.281494140625 -8.248034255586845e-09 C 0.9677734375 -8.248034255586845e-09 -1.718505859375 2.686290979385376 -1.718505859375 5.999999046325684 L -1.718505859375 66.99999237060547 C -1.718505859375 70.31369781494141 0.9677734375 72.99999237060547 4.281494140625 72.99999237060547 L 303.281494140625 72.99999237060547 C 306.59521484375 72.99999237060547 311 76.31369781494141 311 72.99999237060547 L 181.625 72.99999237060547 C 181.625 71.32325744628906 180.8510284423828 18.12835121154785 136.174072265625 -8.248034255586845e-09 C 130.052490234375 -0.156585693359375 127.730224609375 -0.0445861853659153 122.920654296875 -8.248034255586845e-09 C 111.68408203125 -0.0005493246135301888 99.160888671875 -0.000183113690582104 85.65234375 -8.248034255586845e-09 C 82.38925170898438 0.006943571381270885 79.01187133789062 -0.02741670981049538 75.41455078125 -8.248034255586845e-09 C 68.97006225585938 0.04913406074047089 62.365478515625 -0.074005126953125 55.706298828125 -8.248034255586845e-09 C 50.26904296875 -0.1270948052406311 44.886962890625 -0.072052001953125 39.443603515625 -8.248034255586845e-09 C 37.3502197265625 0.02265300415456295 35.19580078125 -0.0266723670065403 32.8984375 -8.248034255586845e-09 C 30.611328125 0.009155264124274254 28.54473876953125 0.00846542976796627 26.11572265625 -8.248034255586845e-09 C 22.67767333984375 -0.01042769104242325 19.027587890625 -0.02310181222856045 15.96484375 -8.248034255586845e-09 C 8.856201171875 -0.064910888671875 4.645843505859375 -8.248034255586845e-09 4.281494140625 -8.248034255586845e-09 Z" fill="url(#image)" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_pppj2s =
+    '<svg viewBox="23.0 426.9 311.0 74.4" ><defs><pattern id="image" patternUnits="userSpaceOnUse" width="1050.0" height="700.0"><image xlink:href="null" x="0" y="0" width="1050.0" height="700.0" /></pattern></defs><path transform="translate(24.72, 427.0)" d="M 303.3144836425781 -0.0001897752517834306 L 303.3144836425781 -0.0001897752517834306 C 306.6099853515625 -0.0001897752517834306 309.2815246582031 2.679776191711426 309.2815246582031 5.985682487487793 L 309.2815246582031 66.84205627441406 C 309.2815246582031 70.14795684814453 306.6099853515625 72.82791900634766 303.3144836425781 72.82791900634766 L 5.957583904266357 72.82791900634766 C 2.662085294723511 72.82791900634766 -1.718505859375 76.13382720947266 -1.718505859375 72.82791900634766 L 126.9455261230469 72.82791900634766 C 126.9455261230469 71.15513610839844 127.7152481079102 18.08547782897949 172.1466827392578 -0.0001897752517834306 C 178.2346343994141 -0.1564067751169205 180.5441284179688 -0.04467097297310829 185.3272705078125 -0.0001897752517834306 C 196.5020904541016 -0.0007377982838079333 208.9564666748047 -0.0003724496345967054 222.3907775878906 -0.0001897752517834306 C 225.6359405517578 0.006737455725669861 228.9947662353516 -0.02754192613065243 232.5723114013672 -0.0001897752517834306 C 238.9813842773438 0.0488286055624485 245.5496826171875 -0.07402064651250839 252.1722564697266 -0.0001897752517834306 C 257.5796508789062 -0.1269853115081787 262.9321594238281 -0.07207211852073669 268.3456115722656 -0.0001897752517834306 C 270.427490234375 0.02240989916026592 272.570068359375 -0.02679933421313763 274.8547973632812 -0.0001897752517834306 C 277.1293334960938 0.008943940512835979 279.1845703125 0.008255730383098125 281.6002502441406 -0.0001897752517834306 C 285.0194091796875 -0.01059290580451488 288.6494140625 -0.02323718555271626 291.6953430175781 -0.0001897752517834306 C 298.7649230957031 -0.06494782119989395 302.9521484375 -0.0001897752517834306 303.3144836425781 -0.0001897752517834306 Z" fill="url(#image)" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_rbwlzx =
+    '<svg viewBox="25.3 515.9 312.7 74.6" ><defs><pattern id="image" patternUnits="userSpaceOnUse" width="675.0" height="900.0"><image xlink:href="null" x="0" y="0" width="675.0" height="900.0" /></pattern></defs><path transform="translate(27.0, 516.0)" d="M 4.281494140625 -8.248034255586845e-09 L 4.281494140625 -8.248034255586845e-09 C 0.9677734375 -8.248034255586845e-09 -1.718505859375 2.686290979385376 -1.718505859375 5.999999046325684 L -1.718505859375 66.99999237060547 C -1.718505859375 70.31369781494141 0.9677734375 72.99999237060547 4.281494140625 72.99999237060547 L 303.281494140625 72.99999237060547 C 306.59521484375 72.99999237060547 311 76.31369781494141 311 72.99999237060547 L 181.625 72.99999237060547 C 181.625 71.32325744628906 180.8510284423828 18.12835121154785 136.174072265625 -8.248034255586845e-09 C 130.052490234375 -0.156585693359375 127.730224609375 -0.0445861853659153 122.920654296875 -8.248034255586845e-09 C 111.68408203125 -0.0005493246135301888 99.160888671875 -0.000183113690582104 85.65234375 -8.248034255586845e-09 C 82.38925170898438 0.006943571381270885 79.01187133789062 -0.02741670981049538 75.41455078125 -8.248034255586845e-09 C 68.97006225585938 0.04913406074047089 62.365478515625 -0.074005126953125 55.706298828125 -8.248034255586845e-09 C 50.26904296875 -0.1270948052406311 44.886962890625 -0.072052001953125 39.443603515625 -8.248034255586845e-09 C 37.3502197265625 0.02265300415456295 35.19580078125 -0.0266723670065403 32.8984375 -8.248034255586845e-09 C 30.611328125 0.009155264124274254 28.54473876953125 0.00846542976796627 26.11572265625 -8.248034255586845e-09 C 22.67767333984375 -0.01042769104242325 19.027587890625 -0.02310181222856045 15.96484375 -8.248034255586845e-09 C 8.856201171875 -0.064910888671875 4.645843505859375 -8.248034255586845e-09 4.281494140625 -8.248034255586845e-09 Z" fill="url(#image)" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_kxqta0 =
+    '<svg viewBox="28.5 607.9 305.5 73.0" ><defs><pattern id="image" patternUnits="userSpaceOnUse" width="967.0" height="725.0"><image xlink:href="null" x="0" y="0" width="967.0" height="725.0" /></pattern></defs><path transform="translate(24.72, 608.0)" d="M 303.3144836425781 -0.0001897752517834306 L 303.3144836425781 -0.0001897752517834306 C 306.6099853515625 -0.0001897752517834306 309.2815246582031 2.679776191711426 309.2815246582031 5.985682487487793 L 309.2815246582031 66.84205627441406 C 309.2815246582031 70.14795684814453 306.6099853515625 72.82791900634766 303.3144836425781 72.82791900634766 L 5.957583904266357 72.82791900634766 C 2.662085294723511 72.82791900634766 3.331787109375 72.95599365234375 6.810302734375 72.82791900634766 L 126.9455261230469 72.82791900634766 C 126.9455261230469 71.15513610839844 127.7152481079102 18.08547782897949 172.1466827392578 -0.0001897752517834306 C 178.2346343994141 -0.1564067751169205 180.5441284179688 -0.04467097297310829 185.3272705078125 -0.0001897752517834306 C 196.5020904541016 -0.0007377982838079333 208.9564666748047 -0.0003724496345967054 222.3907775878906 -0.0001897752517834306 C 225.6359405517578 0.006737455725669861 228.9947662353516 -0.02754192613065243 232.5723114013672 -0.0001897752517834306 C 238.9813842773438 0.0488286055624485 245.5496826171875 -0.07402064651250839 252.1722564697266 -0.0001897752517834306 C 257.5796508789062 -0.1269853115081787 262.9321594238281 -0.07207211852073669 268.3456115722656 -0.0001897752517834306 C 270.427490234375 0.02240989916026592 272.570068359375 -0.02679933421313763 274.8547973632812 -0.0001897752517834306 C 277.1293334960938 0.008943940512835979 279.1845703125 0.008255730383098125 281.6002502441406 -0.0001897752517834306 C 285.0194091796875 -0.01059290580451488 288.6494140625 -0.02323718555271626 291.6953430175781 -0.0001897752517834306 C 298.7649230957031 -0.06494782119989395 302.9521484375 -0.0001897752517834306 303.3144836425781 -0.0001897752517834306 Z" fill="url(#image)" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
