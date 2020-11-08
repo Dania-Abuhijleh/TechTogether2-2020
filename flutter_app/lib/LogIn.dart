@@ -3429,10 +3429,14 @@ class LogIn extends StatelessWidget {
               ),
               textAlign: TextAlign.left,
             ),
-          ), // some things
+          ), 
+          
+          
+          
+          // some things
           Container(
             // padding: const EdgeInsets.fromLTRB(10, 8, 170, 8),
-            margin: new EdgeInsets.fromLTRB(70, 515.0, 110.0, 100.0),
+            margin: new EdgeInsets.fromLTRB(90, 515.0, 110.0, 100.0),
             padding: EdgeInsets.all(12),
             child: Column(
               children: <Widget>[
