@@ -1,6 +1,6 @@
-/*import 'package:path_provider/path_provider.dart';
+import 'package:path_provider/path_provider.dart';
 
-import 'UsrDatabase.dart';
+import 'UserDatabase.dart';
 
 class Usr {
   int id;
@@ -9,29 +9,32 @@ class Usr {
   int lvl;
   String pw;
 
+
   Usr({this.id, this.name, this.prints, this.lvl, this.pw});
 
   Map<String, dynamic> toMap() {
     var map = <String, dynamic>{
-      DatabaseProvider.USER_NAME: name,
-      DatabaseProvider.USER_PRINTS: prints,
-      DatabaseProvider.USER_Level: lvl,
-      DatabaseProvider.USER_PW: pw,
+      DatabaseHelper.USER_NAME: name,
+      DatabaseHelper.USER_PRINTS: prints,
+      DatabaseHelper.USER_Level: lvl,
+      DatabaseHelper.USER_PW: pw,
 
     };
 
     if (id != null) {
-      map[DatabaseProvider.USER_ID] = id;
+      map[DatabaseHelper.USER_ID] = id;
     }
 
     return map;
   }
 
   Usr.fromMap(Map<String, dynamic> map) {
-    id = map[DatabaseProvider.USER_ID];
-    name = map[DatabaseProvider.USER_NAME];
-    prints = map[DatabaseProvider.USER_PRINTS];
-    lvl = map[DatabaseProvider.USER_Level];
+    id = map[DatabaseHelper.USER_ID];
+    name = map[DatabaseHelper.USER_NAME];
+    prints = map[DatabaseHelper.USER_PRINTS];
+    lvl = map[DatabaseHelper.USER_Level];
+    pw = map[DatabaseHelper.USER_PW];
   }
+
+
 }
-*/
