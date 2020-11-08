@@ -31,6 +31,7 @@ class DatabaseProvider {
   static const String completedTasks = "My Completed Tasks";
   static const String dateCompleted = "Date Completed";
   static const String completionID = "completionID";
+  static const String like = "Likes";
 
   static const String frequency = "Task ID";
   static const String gainedXP = "Task XP";
@@ -47,6 +48,8 @@ class DatabaseProvider {
 
   static const String FriendsPosts = "Friends List";
   static const String fr_comment = "FriendId";
+
+
 
 
 
@@ -136,8 +139,10 @@ class DatabaseProvider {
               "$fr_name varchar(20),"
               "$fr_PRINTS INTEGER,"
               "$fr_Level INTEGER,"
+              "$like, INTEGER"
               "$userComment TEXT,"
               "$fr_id INTEGER FOREIGN KEY"
+              "$fr_comment TEXT"
               "$completionID INTEGER FOREIGN KEY"
 
               ")",
